@@ -1,4 +1,4 @@
-$work_folder = Dir.pwd
+$work_folder = Dir.pwd + '/..'
 
 $input_folder 					= $work_folder + '/input'
 $input_folder_original_book		= $work_folder + '/input/Kniha-PSI-MSI-MIS_big' # here, the very source should be placed

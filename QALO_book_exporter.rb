@@ -990,11 +990,11 @@ subchapter_extractors.each do |extractor|
 	p 'pik'
 	file_name = File.basename(latex_file_path)
 	#system 'powershell.exe "gc -en utf8 ./output/latex/'+ file_name +'"'
-	system 'powershell.exe "gc -en utf8 ./output/latex/'+ file_name +' | Out-File -en utf8 ./output/latex/_'+file_name+'"'
+	system 'powershell.exe "gc -en utf8 ../output/latex/'+ file_name +' | Out-File -en utf8 ../output/latex/_'+file_name+'"'
 	FileUtils.cp($output_folder_latex +'/_'+file_name, $output_folder_latex +"/"+file_name)
 	FileUtils.rm($output_folder_latex +'/_'+file_name)
 end
-system 'powershell.exe "gc ./output/latex/structure.tex | Out-File -en utf8 ./output/latex/_structure.tex"'
+system 'powershell.exe "gc ../output/latex/structure.tex | Out-File -en utf8 ../output/latex/_structure.tex"'
 FileUtils.cp($output_folder_latex +'/_structure.tex', $output_folder_latex +'/structure.tex')
 FileUtils.rm($output_folder_latex +'/_structure.tex')
 #system 'powershell.exe "gc ./output/latex/master.tex | Out-File -en utf8 ./output/latex/_master.tex"'
