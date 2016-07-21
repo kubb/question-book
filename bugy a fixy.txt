@@ -1,0 +1,12 @@
+BACHA NA PRIDLHY PATH
+
+3.00
+- obrazky musia byt spravne nalepene (jeden bol nejak inak a ten word to mal vnutorne inak reprezentovane)
+- nesmies nechavat prazdne odstavce typu figure
+
+
+1.00 pomoze ak sa skomprimuju obrazky
+
+
+
+Set page numbering by malo ist tesne po deklaracii prvej kapitoly

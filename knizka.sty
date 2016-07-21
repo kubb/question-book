@@ -40,6 +40,9 @@
 \renewcommand*{\raggedleftmarginnote}{}
 \renewcommand*{\raggedrightmarginnote}{}
 
+\setlength{\oddsidemargin}{32mm} 
+%\setlength{\evensidemargin}{5mm}
+
 % Tento kus kodu zabezpeci, ze margin noty budu vzdy nalavo
 \usepackage{etoolbox}
 \makeatletter
@@ -63,15 +66,16 @@
 \small
 \textbf{#1}\\
 \scriptsize
-\textit{
-\ifthenelse{#2=1}{[1 -- Zapam\"{a}ta\v{t} si]}{}
-\ifthenelse{#2=2}{[2 -- Porozumie\v{t}]}{}
-\ifthenelse{#2=3}{[3 -- Aplikova\v{t}]}{}
-\ifthenelse{#2=4}{[4 -- Analyzova\v{t}]}{}
-\ifthenelse{#2=5}{[5 -- Zhodnoti\v{t}]}{}
-\ifthenelse{#2=6}{[6 -- Tvori\v{t}]}{}
-}
-\\
+% Uncomment to enable bloom display
+%\textit{
+%\ifthenelse{#2=1}{[1 -- Zapam\"{a}ta\v{t} si]}{}
+%\ifthenelse{#2=2}{[2 -- Porozumie\v{t}]}{}
+%\ifthenelse{#2=3}{[3 -- Aplikova\v{t}]}{}
+%\ifthenelse{#2=4}{[4 -- Analyzova\v{t}]}{}
+%\ifthenelse{#2=5}{[5 -- Zhodnoti\v{t}]}{}
+%\ifthenelse{#2=6}{[6 -- Tvori\v{t}]}{}
+%}
+%\\
 \raggedright \nohyphens{#3}
 \normalsize
 \end{helvetica}

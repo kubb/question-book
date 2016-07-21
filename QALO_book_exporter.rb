@@ -81,6 +81,7 @@ class Paragraph_reader
 	attr_accessor :paragraphs
 	
 	def initialize(filepath)
+		p 'initial processing '+ filepath
 		@paragraphs = []
 		@number_of_images = 0
 		file = File.open(filepath, 'r')
@@ -128,6 +129,7 @@ class Paragraph_reader
 			if $figure_style == current_style then
 				@number_of_images +=1
 				blip = parnode.xpath(".//blip").first
+				p blip
 				#Najst spravny subor pomocou mapovania ulozeneho v samostatnom subore rels
 				rels_file = File.open(filepath+".rels",'r')
 				rels_xml = Nokogiri::XML(rels_file.read)
@@ -628,7 +630,12 @@ class Docbook_builder
 		@figure_id+=1
 		format = File.extname(par[:source])
 		figure_target_filename = @actual_qalo[:id] + '-figure-' + @figure_id.to_s + format
-		FileUtils.copy_file(par[:source], File.join($output_folder_docbook_resources, figure_target_filename))
+		p "fig fig fig " + figure_target_filename
+		begin
+			FileUtils.copy_file(par[:source], File.join($output_folder_docbook_resources, figure_target_filename))
+		rescue
+			p "sakra"
+		end
 		xml.informalfigure ({'xml:id' => par[:ID]}) {
 			xml.mediaobject {
 				xml.imageobject {
@@ -687,12 +694,13 @@ class Zipper
 	# unzipne docx, vytiahne XMLko s obsahom dokumentu a ulozi ho pod rovnakym nazvom do zadaneho priecinka
 	# zaroven unzipne aj vsetky obrazky do priecinka pomenovaneho suffixom .images
 	def unzip_word_XML(file, destination)
+		#p 'unzipping '+file
 		#Unzip content
 		Zip::ZipFile.open(file) { |zip_file|
 			zip_file.each { |f|
 				unless f.name == "word/document.xml" then next end
 				f_path=File.join(destination, File.basename(file,".docx")+".document.xml")
-				FileUtils.mkdir_p(File.dirname(f_path))
+				#FileUtils.mkdir_p(File.dirname(f_path))
 				#f_path = f_path.encode($encoding_environment)
 				#p f_path
 				zip_file.extract(f, f_path) unless File.exist?(f_path)
@@ -703,9 +711,10 @@ class Zipper
 			zip_file.each { |f|
 				unless f.name == "word/_rels/document.xml.rels" then next end
 				f_path=File.join(destination, File.basename(file,".docx")+".document.xml.rels")
-				FileUtils.mkdir_p(File.dirname(f_path))
+				#FileUtils.mkdir_p(File.dirname(f_path))
 				#f_path = f_path.encode($encoding_environment)
-				#p f_path
+				p f_path
+				p f.name
 				zip_file.extract(f, f_path) unless File.exist?(f_path)
 			}
 		}	
@@ -733,6 +742,11 @@ class Latexer
 			file.puts  	'\usepackage{knizka}'
 			file.puts  	'\addbibresource{all_bibliography_sources}'
 			file.puts  	'\begin{document}'
+			file.puts 	'\pagenumbering{roman}'
+			file.puts  	"\\title{[Draft pre ucely spatnej vazby]\\\\ Softv\\'{e}rov\\'{e} in\\v{z}inierstvo v ot\\'{a}zkach a odpovediach}"		
+			file.puts  	"\\date{Febru\\'{a}r 2016}"
+			file.puts  	"\\author{M\\'{a}ria Bielikov\\'{a} \\and Jakub \\v{S}imko \\and Mari\\'{a}n \\v{S}imko}"
+			file.puts  	'\maketitle'
 			file.puts  	'\tableofcontents'
 			file.puts  	'\catcode239=9 %This is for escaping BOM characters' 
 			file.puts  	'\catcode187=9 %This is for escaping BOM characters' 
@@ -747,6 +761,8 @@ class Latexer
 	def build_structure_file(source_folder_root)
 		File.open($output_folder_latex+'/structure.tex',"w") do |file|
 			file.puts '\input{preface.tex}'
+			file.puts '\setcounter{page}{1}'
+			file.puts '\pagenumbering{arabic}'
 			Dir.glob($input_folder_original_book +'/*/') do |chapter_folder|
 				raw_chapter_name =  File.basename(chapter_folder)
 				if raw_chapter_name.start_with?("[ignore]") then next end
@@ -777,7 +793,8 @@ class Latexer
 	
 	def build_latex_resource(qalo)
 		res = "\n" 
-		res += '\begin{question}{'+remove_resourceID_prefix(qalo[:id])+'}'		# ID
+		#res += '\begin{question}{'+remove_resourceID_prefix(qalo[:id])+'}'		# ID
+		res += '\begin{question}{'+qalo[:chapter_wise_number]+'}'		# ID
 		res += remove_markup('{'+qalo[:bloom]+'}')						# Bloom level
 		res += remove_markup('{'+qalo[:concepts].join(", ")+'}')			# Koncepty
 		res +="\n"
@@ -792,6 +809,7 @@ class Latexer
 
 		res.gsub!('#','\#') # some special chars must be escaped for latex
 		res.gsub!('_','\_') # some special chars must be escaped for latex
+		res.gsub!('%','\%') # some special chars must be escaped for latex
 		
 		res = place_correct_figure_references(res)
 		res = place_correct_question_references(res)
@@ -849,7 +867,12 @@ class Latexer
 		#TODO POZOR aj tu je .png natvrdo
 		$latex_image_counter +=1
 		target_file_name = $latex_image_counter.to_s + ".png"
-		FileUtils.cp(figure_par[:source],$output_folder_latex_images+'/'+target_file_name)
+		begin
+			FileUtils.cp(figure_par[:source],$output_folder_latex_images+'/'+target_file_name)
+		rescue
+			p "sakra"
+		end
+		
 		
 		res = ""
 		res +="\n"
@@ -979,10 +1002,13 @@ latexer.copy_preamble_files
 subchapter_extractors.each do |extractor|
 	# postprocess from the QALO structure to LaTeX structs
 	subchapter_number =  File.basename(extractor.original_file_path).split(' ', 2)[0]
+	chapter_number_prefix = subchapter_number.split('.')[0].to_i.to_s + "." + subchapter_number.split('.')[1].to_i.to_s + "."
 	latex_file_path = File.join($output_folder_latex, File.basename(subchapter_number, '.xml') + ".tex")
 	latexer = Latexer.new
 	File.open(latex_file_path, 'w') do |f| 
-		extractor.qalos.each do |qalo|
+		extractor.qalos.each_with_index do |qalo, index|
+			chapter_wise_number = chapter_number_prefix + (index+1).to_s
+			qalo[:chapter_wise_number] = chapter_wise_number
 			resource = latexer.build_latex_resource(qalo)
 			f.write(resource.encode('UTF-8'))
 		end
@@ -997,6 +1023,8 @@ end
 system 'powershell.exe "gc ../output/latex/structure.tex | Out-File -en utf8 ../output/latex/_structure.tex"'
 FileUtils.cp($output_folder_latex +'/_structure.tex', $output_folder_latex +'/structure.tex')
 FileUtils.rm($output_folder_latex +'/_structure.tex')
+FileUtils.cp('knizka.sty', $output_folder_latex +'/knizka.sty')
+FileUtils.cp('generate_latex_pdf.bat', $output_folder_latex +'/generate_latex_pdf.bat')
 #system 'powershell.exe "gc ./output/latex/master.tex | Out-File -en utf8 ./output/latex/_master.tex"'
 #FileUtils.cp($output_folder_latex +'/_master.tex', $output_folder_latex +'/master.tex')
 #FileUtils.rm($output_folder_latex +'/_master.tex')
