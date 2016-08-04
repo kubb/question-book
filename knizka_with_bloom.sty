@@ -1,0 +1,122 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{knizka}[2013/01/13 Knizka na PSI]
+
+% Times New Roman
+\usepackage{mathptmx}
+
+% slovencina
+\RequirePackage[slovak]{babel}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{textcomp}
+\RequirePackage{graphicx}
+%biblio per chapter: use refsection = chapter, otherwise use refsection = none
+\RequirePackage[refsection=none,backend=bibtex]{biblatex}
+
+
+
+%\RequirePackage{latexsym}
+
+%\RequirePackage{sidenotes} % This package allows the typesetting of rich content in the margin. It includes text, but also figures, captions, tables and citations, which is common in science textbooks such as Feynman’s Lectures on Physics.
+
+% Odstrani vsetko z prazdnych stran
+\RequirePackage{emptypage}
+
+% tabulky cez viac stran a krajsie
+\RequirePackage{longtable}
+\RequirePackage{booktabs}
+
+% dava nalepky obrazkov a tabuliek na italic
+\RequirePackage[labelfont=it, font=small]{caption}
+
+% neindentuje odstavce, ale dava medzery
+\RequirePackage{parskip}
+
+%umoznuje nakreslit layoutovacie strany
+\RequirePackage{layout}
+
+% lepsie postranne texty
+\RequirePackage{marginnote}
+
+% Umozni pouzivat ifthenelse prikaz
+\RequirePackage{ifthen}
+
+% Umozni pouzivat \nohyphens{(text block)}
+\RequirePackage{hyphenat}
+
+% Umozni pouzivat \needspace{2cm}, co zabezpeci ze ak sa pri volani prikazu nenachadza na strane dost miesta, zacne sa nova.
+\RequirePackage{needspace}
+
+
+\RequirePackage[marginparwidth=3cm, marginparsep=0.5cm, textwidth=12cm]{geometry}
+
+\renewcommand*{\raggedleftmarginnote}{}
+\renewcommand*{\raggedrightmarginnote}{}
+
+\setlength{\oddsidemargin}{32mm} 
+%\setlength{\evensidemargin}{5mm}
+
+% Tento kus kodu zabezpeci, ze margin noty budu vzdy nalavo
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
+\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
+\reversemarginpar 
+\makeatother
+
+
+
+
+
+\newenvironment{helvetica}{\fontfamily{phv}\selectfont}{\par}
+
+% INSERT METADATA ON SIDE (Arguments: question number, bloom level, concepts)
+\newcommand{\metadata}[3]
+{
+\marginnote{
+\begin{helvetica}
+\\
+\small
+\textbf{#1}\\
+\scriptsize
+\textit{
+\ifthenelse{#2=1}{[1 -- Zapam\"{a}ta\v{t} si]}{}
+\ifthenelse{#2=2}{[2 -- Porozumie\v{t}]}{}
+\ifthenelse{#2=3}{[3 -- Aplikova\v{t}]}{}
+\ifthenelse{#2=4}{[4 -- Analyzova\v{t}]}{}
+\ifthenelse{#2=5}{[5 -- Zhodnoti\v{t}]}{}
+\ifthenelse{#2=6}{[6 -- Tvori\v{t}]}{}
+}
+\\
+\raggedright \nohyphens{#3}
+\normalsize
+\end{helvetica}
+}[-5pt]
+}
+
+% INSERT QUESTION (Arguments: question number, bloom level, concepts)
+\newenvironment{question}[3]
+{
+\needspace{2cm}
+\metadata{#1}{#2}{#3}
+\bf
+}
+{
+\rm
+
+}
+
+
+% INSERT ANSWER
+\newenvironment{answer}
+{}
+{\vspace{20pt}}
+
+
+% DEFINES how heading for bibliograhpy should look like
+\defbibheading{section}[\bibname]{%
+\section*{#1}}
+
+
+
+\endinput
