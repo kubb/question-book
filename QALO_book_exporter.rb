@@ -8,6 +8,7 @@ require 'zip/zip'
 require 'fileutils'
 
 require './settings'
+require './figure_config'
 
 # Lists of styles 
 # allowed in source Word documents (the "all" list)
@@ -119,6 +120,10 @@ class Paragraph_reader
 					if runningnode.at_xpath(".//b")!=nil then text = $target_bold_open + text + $target_bold_close end
 					text.gsub!(/\u00a0/, ' ') # remove hard space
 					text.gsub!(/\u202F/, ' ') # remove hard space
+					text.gsub!(/\u000A/, ' ') # replace line breaks with space (TODO (maybe with double backslash, for LaTeX))
+					text.gsub!('~\cite', '\nocite') # flip ~\cite to \nocite 
+					text.gsub!('\cite', '\nocite') # flip \cite to \nocite 
+					text.gsub!('\reallycite', '\cite') # enable nocite override
 					textual_content << text
 				end
 			end
@@ -743,10 +748,7 @@ class Latexer
 			file.puts  	'\addbibresource{all_bibliography_sources}'
 			file.puts  	'\begin{document}'
 			file.puts 	'\pagenumbering{roman}'
-			file.puts  	"\\title{[Draft pre ucely spatnej vazby]\\\\ Softv\\'{e}rov\\'{e} in\\v{z}inierstvo v ot\\'{a}zkach a odpovediach}"		
-			file.puts  	"\\date{Febru\\'{a}r 2016}"
-			file.puts  	"\\author{M\\'{a}ria Bielikov\\'{a} \\and Jakub \\v{S}imko \\and Mari\\'{a}n \\v{S}imko}"
-			file.puts  	'\maketitle'
+			file.puts  	'\input{titlepage.tex}'
 			file.puts  	'\tableofcontents'
 			file.puts  	'\catcode239=9 %This is for escaping BOM characters' 
 			file.puts  	'\catcode187=9 %This is for escaping BOM characters' 
@@ -761,8 +763,7 @@ class Latexer
 	def build_structure_file(source_folder_root)
 		File.open($output_folder_latex+'/structure.tex',"w") do |file|
 			file.puts '\input{preface.tex}'
-			file.puts '\setcounter{page}{1}'
-			file.puts '\pagenumbering{arabic}'
+			onetimer = true;
 			Dir.glob($input_folder_original_book +'/*/') do |chapter_folder|
 				raw_chapter_name =  File.basename(chapter_folder)
 				if raw_chapter_name.start_with?("[ignore]") then next end
@@ -770,6 +771,12 @@ class Latexer
 				chapter_name = raw_chapter_name.split(' ', 2)[1]
 				if chapter_name == nil then next end
 				file.puts '\chapter{'+chapter_name+'}'
+				# insert page counter reset after first chapter declaration
+				if onetimer then
+					onetimer = false;
+					file.puts '\setcounter{page}{1}'
+					file.puts '\pagenumbering{arabic}'					
+				end
 				Dir.glob(chapter_folder+"/*") do |file_path|
 					subchapter_number = File.basename(file_path).split(' ', 2)[0]
 					subchapter_file = File.basename(file_path).split(' ', 2)[1]
@@ -778,8 +785,15 @@ class Latexer
 					file.puts '\section{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
 					file.puts '\input{'+subchapter_number+'.tex}'
 				end
-				file.puts '\printbibliography[title=Zdroje,heading=section]{}'
+				# uncomment for bibliography per chapter
+				#file.puts '\printbibliography[title=Zdroje,heading=section]{}'
 			end
+			# and comment this one
+			file.puts '\printbibliography[title=Zdroje]{}'
+			file.puts '\\addcontentsline{toc}{chapter}{Zdroje}'
+			file.puts '\appendix'
+			file.puts '\input{priloha_slovnik.tex}'
+			file.puts '\input{priloha_poster.tex}'
 		end
 	end
 	
@@ -787,12 +801,15 @@ class Latexer
 	def copy_preamble_files
 		FileUtils.copy_entry($input_folder_original_book +'/preface.tex', $output_folder_latex + '/preface.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/all_bibliography_sources.bib', $output_folder_latex + '/all_bibliography_sources.bib')		
+		FileUtils.copy_entry($input_folder_original_book +'/priloha_poster.tex', $output_folder_latex + '/priloha_poster.tex')
+		FileUtils.copy_entry($input_folder_original_book +'/priloha_slovnik.tex', $output_folder_latex + '/priloha_slovnik.tex')
+		FileUtils.copy_entry($input_folder_original_book +'/titlepage.tex', $output_folder_latex + '/titlepage.tex')
 	end
 	
 	
 	
 	def build_latex_resource(qalo)
-		res = "\n" 
+		res = "" 
 		#res += '\begin{question}{'+remove_resourceID_prefix(qalo[:id])+'}'		# ID
 		res += '\begin{question}{'+qalo[:chapter_wise_number]+'}'		# ID
 		res += remove_markup('{'+qalo[:bloom]+'}')						# Bloom level
@@ -806,13 +823,14 @@ class Latexer
 		res += qalo[:answer].map{|par| latexize_paragraph(par)}.join("\n")		# Odstavce odpovede, including images
 		res +='\end{answer}'
 		res +="\n"
+		res +="\n"
 
 		res.gsub!('#','\#') # some special chars must be escaped for latex
 		res.gsub!('_','\_') # some special chars must be escaped for latex
 		res.gsub!('%','\%') # some special chars must be escaped for latex
 		
 		res = place_correct_figure_references(res)
-		res = place_correct_question_references(res)
+		#res = place_correct_question_references(res)
 		
 		return res
 	end
@@ -873,14 +891,26 @@ class Latexer
 			p "sakra"
 		end
 		
+		p figure_par[:ID]
+		
+		# image behavior in latex
+		if $image_config.has_key?(figure_par[:ID])
+			# draw from config
+			flags = $image_config[figure_par[:ID]][:flags]
+			scale = $image_config[figure_par[:ID]][:scale]
+		else
+			# default behavior
+			flags ='htb'
+			scale ='0.9'
+		end
 		
 		res = ""
 		res +="\n"
-		res += '\begin{figure}[htb]'
+		res += '\begin{figure}['+flags+']'
 		res +="\n"
 		res += '\centering'
 		res +="\n"
-		res += '\includegraphics[width=\columnwidth]{images/'+target_file_name+'}'
+		res += '\includegraphics[width='+scale+'\columnwidth]{images/'+target_file_name+'}'
 		res +="\n"
 		res += '\caption{'+remove_markup(figure_par[:caption])+'}' unless figure_par[:caption] == nil
 		res +="\n"
@@ -888,6 +918,15 @@ class Latexer
 		res +="\n"
 		res += '\end{figure}'
 		res +="\n"
+		
+		if $image_config.has_key?(figure_par[:ID])
+			if ($image_config[figure_par[:ID]][:clearpage_after].equal? 1)
+				res += '\clearpage'
+				res +="\n"
+			end
+		end
+		
+		return res;
 	end
 	
 	def place_correct_figure_references(text)
@@ -902,10 +941,10 @@ class Latexer
 		res = text.dup
 		res.scan(/\*\*(.*?)\*\*/).each do |match|
 			label = match[0]
-			if $labels_to_numbers[label] == nil then
+			if $labels_to_structured_numbers[label] == nil then
 				p "referencing non-existing question label " + label
 			else
-				res.gsub!('**'+label+'**', $labels_to_numbers[label].to_s) 
+				res.gsub!('**'+label+'**', $labels_to_structured_numbers[label]) 
 			end
 		end
 		return res
@@ -987,7 +1026,7 @@ subchapter_extractors.each do |extractor|
 		if qalo == nil then p extractor.qalos end
 		@docbook_resource_number += 1
 		qalo[:docbook_number] = @docbook_resource_number #pomoooc, pouziva sa to aj v latexe
-		$labels_to_numbers[qalo[:label]] = qalo[:docbook_number] unless qalo[:label] == nil
+		$labels_to_numbers[qalo[:label]] = qalo[:docbook_number] unless qalo[:label] == nil     # TODO sem musi ist strukturovane cislo, nejak
 		qalo[:id] = $docbook_resource_id_prefix + @docbook_resource_number.to_s
 		target_file = $output_folder_docbook + '/' + $docbook_resource_file_prefix + @docbook_resource_number.to_s + ".xml" 
 		docbook_builder.build_ALEF_resource(target_file, qalo)
@@ -999,6 +1038,7 @@ latexer = Latexer.new
 latexer.build_master_file
 latexer.build_structure_file $input_folder_unzipped_book
 latexer.copy_preamble_files
+$labels_to_structured_numbers ={}
 subchapter_extractors.each do |extractor|
 	# postprocess from the QALO structure to LaTeX structs
 	subchapter_number =  File.basename(extractor.original_file_path).split(' ', 2)[0]
@@ -1009,10 +1049,12 @@ subchapter_extractors.each do |extractor|
 		extractor.qalos.each_with_index do |qalo, index|
 			chapter_wise_number = chapter_number_prefix + (index+1).to_s
 			qalo[:chapter_wise_number] = chapter_wise_number
+			$labels_to_structured_numbers[qalo[:label]] = chapter_wise_number;
 			resource = latexer.build_latex_resource(qalo)
 			f.write(resource.encode('UTF-8'))
 		end
 	end
+	
 	p 'pik'
 	file_name = File.basename(latex_file_path)
 	#system 'powershell.exe "gc -en utf8 ./output/latex/'+ file_name +'"'
@@ -1020,6 +1062,25 @@ subchapter_extractors.each do |extractor|
 	FileUtils.cp($output_folder_latex +'/_'+file_name, $output_folder_latex +"/"+file_name)
 	FileUtils.rm($output_folder_latex +'/_'+file_name)
 end
+
+# this is for replacing question references
+Dir.glob($output_folder_latex  +'/*.tex')  do |file_name|
+	text = File.read(file_name)
+	new_content = text.dup
+	new_content.scan(/\*\*(.*?)\*\*/).each do |match|
+		label = match[0]
+		if $labels_to_structured_numbers[label] == nil then
+			p "referencing non-existing question label " + label
+		else
+			new_content.gsub!('**'+label+'**', $labels_to_structured_numbers[label]) 
+		end
+	end
+	File.open(file_name, "w") {|file| file.puts new_content }
+end
+
+	#res = place_correct_question_references(res)
+
+
 system 'powershell.exe "gc ../output/latex/structure.tex | Out-File -en utf8 ../output/latex/_structure.tex"'
 FileUtils.cp($output_folder_latex +'/_structure.tex', $output_folder_latex +'/structure.tex')
 FileUtils.rm($output_folder_latex +'/_structure.tex')
