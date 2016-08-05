@@ -10,11 +10,24 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{textcomp}
 \RequirePackage{graphicx}
-\RequirePackage[refsection=chapter,backend=bibtex]{biblatex}
+%biblio per chapter: use refsection = chapter, otherwise use refsection = none
+\RequirePackage[refsection=none,backend=bibtex]{biblatex}
+
+
 
 %\RequirePackage{latexsym}
 
 %\RequirePackage{sidenotes} % This package allows the typesetting of rich content in the margin. It includes text, but also figures, captions, tables and citations, which is common in science textbooks such as Feynman’s Lectures on Physics.
+
+% Odstrani vsetko z prazdnych stran
+\RequirePackage{emptypage}
+
+% tabulky cez viac stran a krajsie
+\RequirePackage{longtable}
+\RequirePackage{booktabs}
+
+% dava nalepky obrazkov a tabuliek na italic
+\RequirePackage[labelfont=it, font=small]{caption}
 
 % neindentuje odstavce, ale dava medzery
 \RequirePackage{parskip}

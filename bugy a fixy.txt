@@ -7,6 +7,4 @@ BACHA NA PRIDLHY PATH
 
 1.00 pomoze ak sa skomprimuju obrazky
 
-
-
-Set page numbering by malo ist tesne po deklaracii prvej kapitoly
+\nocite{*}
