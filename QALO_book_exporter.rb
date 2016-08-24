@@ -1039,6 +1039,7 @@ latexer.build_master_file
 latexer.build_structure_file $input_folder_unzipped_book
 latexer.copy_preamble_files
 $labels_to_structured_numbers ={}
+log_table_file = File.open('concepts.txt', 'w');
 subchapter_extractors.each do |extractor|
 	# postprocess from the QALO structure to LaTeX structs
 	subchapter_number =  File.basename(extractor.original_file_path).split(' ', 2)[0]
@@ -1052,6 +1053,17 @@ subchapter_extractors.each do |extractor|
 			$labels_to_structured_numbers[qalo[:label]] = chapter_wise_number;
 			resource = latexer.build_latex_resource(qalo)
 			f.write(resource.encode('UTF-8'))
+			#TODO sem este bachnut logovanie koncept-id-znenie otazky
+			log_table_id = chapter_wise_number;
+			log_table_question = qalo[:question].map{|par| par[:text]}.join("\n");
+			log_table_question.gsub!(/(<[^>]*>)|\n|\t/) {" "}
+			log_table_question.downcase!
+			qalo[:concepts].each do |log_table_concept|
+				#p log_table_concept
+				#p log_table_id
+				#p log_table_question
+				log_table_file.write(log_table_concept+";"+log_table_id+";"+log_table_question+"\n")
+			end
 		end
 	end
 	
@@ -1062,6 +1074,7 @@ subchapter_extractors.each do |extractor|
 	FileUtils.cp($output_folder_latex +'/_'+file_name, $output_folder_latex +"/"+file_name)
 	FileUtils.rm($output_folder_latex +'/_'+file_name)
 end
+log_table_file.close
 
 # this is for replacing question references
 Dir.glob($output_folder_latex  +'/*.tex')  do |file_name|
