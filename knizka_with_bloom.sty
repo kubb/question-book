@@ -13,7 +13,8 @@
 %biblio per chapter: use refsection = chapter, otherwise use refsection = none
 \RequirePackage[refsection=none,backend=bibtex]{biblatex}
 
-
+% for grammar correction purposes
+\RequirePackage[doublespacing]{setspace}
 
 %\RequirePackage{latexsym}
 
@@ -94,12 +95,22 @@
 }[-5pt]
 }
 
+% This four things are for setting up the list of questions
+\RequirePackage{tocloft}
+\RequirePackage{environ}
+\newcommand{\listquestionname}{Zoznam ot\'{a}zok}
+\newlistof{question}{que}{\listquestionname}
+
+
 % INSERT QUESTION (Arguments: question number, bloom level, concepts)
-\newenvironment{question}[3]
+\NewEnviron{question}[3]
 {
 \needspace{2cm}
 \metadata{#1}{#2}{#3}
+\addcontentsline{que}{question}{\bf #1 \rm \BODY}
 \bf
+\BODY % and make sure there is space after here to start new par
+
 }
 {
 \rm

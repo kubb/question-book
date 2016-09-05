@@ -293,7 +293,7 @@ class Extractor
 
 	def process_concepts(transition)
 		text = transition.args[0][:text]
-		tags = text.split(',').map(&:strip).map(&:downcase)
+		tags = text.split(',').map(&:strip)#.map(&:downcase)
 		@QALO[:concepts] = tags
 		$log.debug "Identified concepts"		
 	end
@@ -750,6 +750,7 @@ class Latexer
 			file.puts 	'\pagenumbering{roman}'
 			file.puts  	'\input{titlepage.tex}'
 			file.puts  	'\tableofcontents'
+			file.puts  	'\listofquestion'
 			file.puts  	'\catcode239=9 %This is for escaping BOM characters' 
 			file.puts  	'\catcode187=9 %This is for escaping BOM characters' 
 			file.puts  	'\catcode191=9 %This is for escaping BOM characters' 
@@ -771,6 +772,7 @@ class Latexer
 				chapter_name = raw_chapter_name.split(' ', 2)[1]
 				if chapter_name == nil then next end
 				file.puts '\chapter{'+chapter_name+'}'
+				file.puts '\addcontentsline{que}{part}{'+chapter_name+'}'
 				# insert page counter reset after first chapter declaration
 				if onetimer then
 					onetimer = false;
@@ -783,6 +785,7 @@ class Latexer
 					if subchapter_file == nil then next end
 					subchapter_name = File.basename(subchapter_file,".docx" )
 					file.puts '\section{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
+					file.puts '\addcontentsline{que}{chapter}{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
 					file.puts '\input{'+subchapter_number+'.tex}'
 				end
 				# uncomment for bibliography per chapter
