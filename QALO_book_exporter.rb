@@ -71,6 +71,37 @@ $target_italic_close = '</emphasis>'
 $target_bold_open = '<emphasis role="bold">'
 $target_bold_close = '</emphasis>'
 
+def bind_prepositions(text)
+	text.gsub!(' o ',' o~')
+	text.gsub!(' v ',' v~')
+	text.gsub!(' (v ',' (v~')
+	text.gsub!(' V ',' V~')
+	text.gsub!(' vo ',' vo~')
+	text.gsub!(' Vo ',' Vo~')
+	text.gsub!(' do ',' do~')
+	text.gsub!(' Do ',' Do~')
+	text.gsub!(' od ',' od~')
+	text.gsub!(' Od ',' Od~')
+	text.gsub!(' u ',' u~')
+	text.gsub!(' k ',' k~')
+	text.gsub!(' ku ',' ku~')
+	text.gsub!(' s ',' s~')
+	text.gsub!('(s ','(s~')
+	text.gsub!(' z ',' z~')
+	text.gsub!(' ak ',' ak~')
+	text.gsub!('(ak ','(ak~')
+	text.gsub!(' aj ',' aj~')
+	text.gsub!('(aj ','(aj~')
+	text.gsub!(' na ',' na~')
+	text.gsub!(' a ',' a~')
+	text.gsub!(' A ',' A~')
+	text.gsub!('napr. ','napr.~')
+	text.gsub!('(resp. ','(napr.~')
+	text.gsub!('t.j.','t.~j.')
+	text
+end
+
+
 
 #This class reads an MS Word XML file,
 #finds relevant nodes (determining their styles), 
@@ -124,6 +155,7 @@ class Paragraph_reader
 					text.gsub!('~\cite', '\nocite') # flip ~\cite to \nocite 
 					text.gsub!('\cite', '\nocite') # flip \cite to \nocite 
 					text.gsub!('\reallycite', '\cite') # enable nocite override
+					text = bind_prepositions(text)
 					textual_content << text
 				end
 			end
@@ -743,12 +775,14 @@ class Latexer
 	
 	def build_master_file
 		File.open($output_folder_latex+'/master.tex',"w") do |file|
-			file.puts 	'\documentclass[twoside]{book}'
+			file.puts 	'\documentclass[b5paper,10pt,twoside]{book}'
 			file.puts  	'\usepackage{knizka}'
 			file.puts  	'\addbibresource{all_bibliography_sources}'
+			file.puts  	'\input{hyphenation.tex}'
 			file.puts  	'\begin{document}'
 			file.puts 	'\pagenumbering{roman}'
 			file.puts  	'\input{titlepage.tex}'
+			#file.puts  	'\clearpage'			
 			file.puts  	'\tableofcontents'
 			file.puts  	'\listofquestion'
 			file.puts  	'\catcode239=9 %This is for escaping BOM characters' 
@@ -764,6 +798,9 @@ class Latexer
 	def build_structure_file(source_folder_root)
 		File.open($output_folder_latex+'/structure.tex',"w") do |file|
 			file.puts '\input{preface.tex}'
+			file.puts '\begin{figure}[p]'
+			file.puts '\includegraphics[width=1.35\textwidth,lap=-1cm,valign=T,center]{concept_maps_pages/intro.pdf}'
+			file.puts '\end{figure}'
 			onetimer = true;
 			Dir.glob($input_folder_original_book +'/*/') do |chapter_folder|
 				raw_chapter_name =  File.basename(chapter_folder)
@@ -772,6 +809,7 @@ class Latexer
 				chapter_name = raw_chapter_name.split(' ', 2)[1]
 				if chapter_name == nil then next end
 				file.puts '\chapter{'+chapter_name+'}'
+				file.puts '\addtocontents{que}{\needspace{1cm}}'
 				file.puts '\addcontentsline{que}{part}{'+chapter_name+'}'
 				# insert page counter reset after first chapter declaration
 				if onetimer then
@@ -784,8 +822,13 @@ class Latexer
 					subchapter_file = File.basename(file_path).split(' ', 2)[1]
 					if subchapter_file == nil then next end
 					subchapter_name = File.basename(subchapter_file,".docx" )
+					file.puts '\needspace{5cm}'
 					file.puts '\section{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
+					file.puts '\addtocontents{que}{\needspace{1cm}}' unless subchapter_name.include? '[Main]'
 					file.puts '\addcontentsline{que}{chapter}{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
+					file.puts '\begin{figure}[p]'
+					file.puts '\includegraphics[width=1.35\textwidth,lap=-1cm,valign=T,center]{concept_maps_pages/'+subchapter_number.gsub('.','_')+'.pdf}'
+					file.puts '\end{figure}'
 					file.puts '\input{'+subchapter_number+'.tex}'
 				end
 				# uncomment for bibliography per chapter
@@ -803,6 +846,7 @@ class Latexer
 	
 	def copy_preamble_files
 		FileUtils.copy_entry($input_folder_original_book +'/preface.tex', $output_folder_latex + '/preface.tex')
+		FileUtils.copy_entry($input_folder_original_book +'/hyphenation.tex', $output_folder_latex + '/hyphenation.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/all_bibliography_sources.bib', $output_folder_latex + '/all_bibliography_sources.bib')		
 		FileUtils.copy_entry($input_folder_original_book +'/priloha_poster.tex', $output_folder_latex + '/priloha_poster.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/priloha_slovnik.tex', $output_folder_latex + '/priloha_slovnik.tex')
@@ -1102,6 +1146,7 @@ FileUtils.cp($output_folder_latex +'/_structure.tex', $output_folder_latex +'/st
 FileUtils.rm($output_folder_latex +'/_structure.tex')
 FileUtils.cp('knizka.sty', $output_folder_latex +'/knizka.sty')
 FileUtils.cp('generate_latex_pdf.bat', $output_folder_latex +'/generate_latex_pdf.bat')
+FileUtils.copy_entry($input_folder_original_book+'/concept_maps_pages', $output_folder_latex+'/concept_maps_pages')
 #system 'powershell.exe "gc ./output/latex/master.tex | Out-File -en utf8 ./output/latex/_master.tex"'
 #FileUtils.cp($output_folder_latex +'/_master.tex', $output_folder_latex +'/master.tex')
 #FileUtils.rm($output_folder_latex +'/_master.tex')

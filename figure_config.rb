@@ -26,13 +26,13 @@ $image_config = {
 	'obrazok-unified-process' => { :scale => '1.0', :flags => 'htb'},
 	'obr-UML-diagrams' => { :scale => '1.0', :flags => 'htb'},
 	'obr-relationship-types' => { :scale => '0.6', :flags => 'htb'},
-	'obr-activity-example' => { :scale => '0.8', :flags => 'htb'},
-	'obr-use-case-example' => { :scale => '1.0', :flags => 'htb'},
-	'obr-class-example' => { :scale => '1.0', :flags => 'htb'},
-	'obr-sequence-example' => { :scale => '0.8', :flags => 'htb'},
-	'obr-state-diagram-example' => { :scale => '1.0', :flags => 'htb'},
-	'obr-object-diagram-example' => { :scale => '0.6', :flags => 'htb'},
-	'obr-component-diagram-example' => { :scale => '0.9', :flags => 'htb'},
-	'obr-package-diagram-example' => { :scale => '1.0', :flags => 'htb'},
-	'obr-deployment-diagram-example' => { :scale => '0.7', :flags => 'htb'} 
+	'obr-activity-example' => { :scale => '0.8', :flags => 'p'},
+	'obr-use-case-example' => { :scale => '1.0', :flags => 'p'},
+	'obr-class-example' => { :scale => '1.0', :flags => 'p'},
+	'obr-sequence-example' => { :scale => '0.8', :flags => 'p'},
+	'obr-state-diagram-example' => { :scale => '1.0', :flags => 'p'},
+	'obr-object-diagram-example' => { :scale => '0.6', :flags => 'p'},
+	'obr-component-diagram-example' => { :scale => '0.9', :flags => 'p'},
+	'obr-package-diagram-example' => { :scale => '1.0', :flags => 'p'},
+	'obr-deployment-diagram-example' => { :scale => '0.7', :flags => 'p'} 
 }

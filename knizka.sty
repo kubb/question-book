@@ -14,7 +14,7 @@
 \RequirePackage[refsection=none,backend=bibtex]{biblatex}
 
 % for grammar correction purposes
-\RequirePackage[doublespacing]{setspace}
+%\RequirePackage[doublespacing]{setspace}
 
 %\RequirePackage{latexsym}
 
@@ -48,13 +48,20 @@
 % Umozni pouzivat \needspace{2cm}, co zabezpeci ze ak sa pri volani prikazu nenachadza na strane dost miesta, zacne sa nova.
 \RequirePackage{needspace}
 
+% umozni pridavanie pdf stranok pomocou 
+%\includepdf[scale=0.9, pages={1}]{concept_maps_pages/1_0.pdf}
+\RequirePackage[final]{pdfpages}
 
-\RequirePackage[marginparwidth=3cm, marginparsep=0.5cm, textwidth=12cm]{geometry}
+%Umozni centrovat sirsie figures (potrebujeme na konceptove mapy)
+\RequirePackage[export]{adjustbox}[2011/08/13]
+
+
+\RequirePackage[marginparwidth=2cm, marginparsep=0.3cm, textwidth=11.5cm]{geometry}
 
 \renewcommand*{\raggedleftmarginnote}{}
 \renewcommand*{\raggedrightmarginnote}{}
 
-\setlength{\oddsidemargin}{32mm} 
+\setlength{\oddsidemargin}{15mm} 
 %\setlength{\evensidemargin}{5mm}
 
 % Tento kus kodu zabezpeci, ze margin noty budu vzdy nalavo
