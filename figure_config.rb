@@ -34,5 +34,5 @@ $image_config = {
 	'obr-object-diagram-example' => { :scale => '0.6', :flags => 'p'},
 	'obr-component-diagram-example' => { :scale => '0.9', :flags => 'p'},
 	'obr-package-diagram-example' => { :scale => '1.0', :flags => 'p'},
-	'obr-deployment-diagram-example' => { :scale => '0.7', :flags => 'p'} 
+	'obr-deployment-diagram-example' => { :scale => '0.7', :flags => 'bp'} 
 }

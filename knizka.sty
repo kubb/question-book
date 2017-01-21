@@ -1,8 +1,25 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{knizka}[2013/01/13 Knizka na PSI]
 
+% this bunch of code adjusts line breaks and prevents overfull hboxes is from the web
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\vfuzz \hfuzz
+\raggedbottom
+
 % Times New Roman
-\usepackage{mathptmx}
+%\usepackage{mathptmx}
+
+% font (vhodny aj pre slovencinu)
+\RequirePackage{tgpagella}
+
+% potrebujeme na farebny text, konkretne sedu
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+%zabrani osamotenym riadkom
+\RequirePackage[all]{nowidow}
 
 % slovencina
 \RequirePackage[slovak]{babel}
@@ -22,6 +39,9 @@
 
 % Odstrani vsetko z prazdnych stran
 \RequirePackage{emptypage}
+
+% nejake znaky ako copyright
+\RequirePackage{textcomp}
 
 % tabulky cez viac stran a krajsie
 \RequirePackage{longtable}

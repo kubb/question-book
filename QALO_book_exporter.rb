@@ -88,6 +88,7 @@ def bind_prepositions(text)
 	text.gsub!(' s ',' s~')
 	text.gsub!('(s ','(s~')
 	text.gsub!(' z ',' z~')
+	text.gsub!(' Z ',' Z~')
 	text.gsub!(' ak ',' ak~')
 	text.gsub!('(ak ','(ak~')
 	text.gsub!(' aj ',' aj~')
@@ -95,9 +96,34 @@ def bind_prepositions(text)
 	text.gsub!(' na ',' na~')
 	text.gsub!(' a ',' a~')
 	text.gsub!(' A ',' A~')
+	text.gsub!(' i ',' i~')
+	text.gsub!(' I ',' I~')
 	text.gsub!('napr. ','napr.~')
 	text.gsub!('(resp. ','(napr.~')
 	text.gsub!('t.j.','t.~j.')
+	
+	# nahradit vsetky pomlckove slova, tu to ale byt nesmie, lebo to pokasle labely a ine veci
+	#text.gsub!(/(?<=[a-zA-Z])-(?=[a-zA-Z])/,'\hyp ')
+	
+	text
+end
+
+# in order to keep correct hyphenation, we must replace in-word dashes with \hyp, but we must avoid this replacement in question and image references
+def replace_dashes_with_hyphens(text)			
+	text.gsub!(/(?<=[a-zA-Z])-(?=[a-zA-Z])/,'\hyp ')
+	
+	text.scan(/\*\*(.*?)\*\*/).each do |match|
+		damaged = match[0]
+		repaired = damaged.gsub('\hyp ','-')
+		text.gsub!(damaged,repaired)
+	end	
+
+	text.scan(/\[\[(.*?)\]\]/).each do |match|
+		damaged = match[0]
+		repaired = damaged.gsub('\hyp ','-')
+		text.gsub!(damaged,repaired)
+	end	
+
 	text
 end
 
@@ -155,7 +181,6 @@ class Paragraph_reader
 					text.gsub!('~\cite', '\nocite') # flip ~\cite to \nocite 
 					text.gsub!('\cite', '\nocite') # flip \cite to \nocite 
 					text.gsub!('\reallycite', '\cite') # enable nocite override
-					text = bind_prepositions(text)
 					textual_content << text
 				end
 			end
@@ -325,8 +350,11 @@ class Extractor
 
 	def process_concepts(transition)
 		text = transition.args[0][:text]
-		tags = text.split(',').map(&:strip)#.map(&:downcase)
+		#tags = text.split(',').map(&:strip)#.map(&:downcase) # povodne
+		tags_second_level = text.scan(/\[(.*?)\]/).join(", ").split(',').map(&:strip).reject(&:empty?)
+	        tags = text.gsub(/\[(.*?)\]/,',').split(',').map(&:strip).reject(&:empty?)
 		@QALO[:concepts] = tags
+		@QALO[:concepts_second_level] = tags_second_level
 		$log.debug "Identified concepts"		
 	end
 
@@ -860,7 +888,11 @@ class Latexer
 		#res += '\begin{question}{'+remove_resourceID_prefix(qalo[:id])+'}'		# ID
 		res += '\begin{question}{'+qalo[:chapter_wise_number]+'}'		# ID
 		res += remove_markup('{'+qalo[:bloom]+'}')						# Bloom level
-		res += remove_markup('{'+qalo[:concepts].join(", ")+'}')			# Koncepty
+		if(qalo[:concepts_second_level].empty?) then
+			res += remove_markup('{'+qalo[:concepts].join(", ")+'}')	# Koncepty, pokial nemame second level koncepty
+		else
+			res += remove_markup('{'+qalo[:concepts].join(", ")+', \textcolor{gray}{'+qalo[:concepts_second_level].join(", ")+'}'+'}')			# Koncepty			
+		end
 		res +="\n"
 		res += qalo[:question].map{|par| latexize_paragraph(par)}.join("\n")	# Odstavce otazky, including images
 		res +='\end{question}'
@@ -872,6 +904,7 @@ class Latexer
 		res +="\n"
 		res +="\n"
 
+		res = bind_prepositions(res)
 		res.gsub!('#','\#') # some special chars must be escaped for latex
 		res.gsub!('_','\_') # some special chars must be escaped for latex
 		res.gsub!('%','\%') # some special chars must be escaped for latex
@@ -902,10 +935,13 @@ class Latexer
 		case par[:type]
 		when :regular
 			res +=place_correct_emphasis(par[:text].strip)+"\n"
+			res = replace_dashes_with_hyphens(res)
 		when :bulleted
 			res +=paragraph_to_list(par, "itemize")
+			res = replace_dashes_with_hyphens(res)
 		when :numbered
 			res +=paragraph_to_list(par, "enumerate")
+			res = replace_dashes_with_hyphens(res)
 		when :figure
 			#TODO images
 			res += handle_latex_figure(par) # generates snippet, but also copies the image file
@@ -984,19 +1020,6 @@ class Latexer
 		#res.match(/\[\[(.*?)\]\]/).each do ||
 	end
 
-	def place_correct_question_references(text)
-		res = text.dup
-		res.scan(/\*\*(.*?)\*\*/).each do |match|
-			label = match[0]
-			if $labels_to_structured_numbers[label] == nil then
-				p "referencing non-existing question label " + label
-			else
-				res.gsub!('**'+label+'**', $labels_to_structured_numbers[label]) 
-			end
-		end
-		return res
-		#res.match(/\[\[(.*?)\]\]/).each do ||
-	end
 end
 
 
