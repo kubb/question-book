@@ -16,7 +16,11 @@
 \RequirePackage{tgpagella}
 
 % potrebujeme na farebny text, konkretne sedu
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+% umozni vlozit register
+\RequirePackage{imakeidx}
+\makeindex[program=xindy,options= -M texindy -L czech]
 
 %zabrani osamotenym riadkom
 \RequirePackage[all]{nowidow}
@@ -37,6 +41,13 @@
 
 %\RequirePackage{sidenotes} % This package allows the typesetting of rich content in the margin. It includes text, but also figures, captions, tables and citations, which is common in science textbooks such as Feynman’s Lectures on Physics.
 
+% Headery nebudu uppercasom
+\RequirePackage[nouppercase]{scrpage2}
+\pagestyle{scrheadings}
+
+% umozni pouzivanie \cleartoevenpage
+\RequirePackage{nextpage}
+
 % Odstrani vsetko z prazdnych stran
 \RequirePackage{emptypage}
 
@@ -48,7 +59,7 @@
 \RequirePackage{booktabs}
 
 % dava nalepky obrazkov a tabuliek na italic
-\RequirePackage[labelfont=it, font=small]{caption}
+\RequirePackage[labelfont=it, font={footnotesize,it}]{caption}
 
 % neindentuje odstavce, ale dava medzery
 \RequirePackage{parskip}
@@ -58,6 +69,9 @@
 
 % lepsie postranne texty
 \RequirePackage{marginnote}
+
+% Zalomi strany aj pri postrannych
+\RequirePackage{marginfix}
 
 % Umozni pouzivat ifthenelse prikaz
 \RequirePackage{ifthen}
@@ -75,22 +89,23 @@
 %Umozni centrovat sirsie figures (potrebujeme na konceptove mapy)
 \RequirePackage[export]{adjustbox}[2011/08/13]
 
+%\RequirePackage{showframe}
 
-\RequirePackage[marginparwidth=2cm, marginparsep=0.3cm, textwidth=11.5cm]{geometry}
+\RequirePackage[paper=b5paper, inner=2cm, bottom=2cm, textwidth=12cm, marginparwidth=2.2cm, marginparsep=0.5cm]{geometry}
 
 \renewcommand*{\raggedleftmarginnote}{}
 \renewcommand*{\raggedrightmarginnote}{}
 
-\setlength{\oddsidemargin}{15mm} 
+%\setlength{\oddsidemargin}{10mm} 
 %\setlength{\evensidemargin}{5mm}
 
 % Tento kus kodu zabezpeci, ze margin noty budu vzdy nalavo
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
-\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
-\reversemarginpar 
-\makeatother
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
+%\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
+%\reversemarginpar 
+%\makeatother
 
 
 

@@ -1,554 +1,507 @@
-Softvérové inžinierstvo;1.0.1;Čo je to inžinierstvo?
-Softvér;1.0.2;Čo všetko zahŕňame pod pojem softvér?
-Softvérové inžinierstvo;1.0.3;uveďte, čo to je softvérové inžinierstvo.
-Softvérové inžinierstvo;1.0.4;kedy sa začal používať pojem softvérové inžinierstvo? aká stará  je táto disciplína?
-Projekt;1.0.5;Čo je to softvérový projekt?
+inžinierstvo;1.0.1;Čo je to inžinierstvo?
+softvér;1.0.2;Čo všetko zahŕňame pod pojem softvér?
+softvérové inžinierstvo;1.0.3;uveďte, čo to je softvérové inžinierstvo.
+softvérové inžinierstvo;1.0.4;kedy sa začal používať pojem softvérové inžinierstvo? aká stará  je táto disciplína?
+projekt;1.0.5;Čo je to softvérový projekt?
 softvérový projekt;1.0.5;Čo je to softvérový projekt?
-Projekt;1.0.6;kedy je softvérový projekt úspešný?
 softvérový projekt;1.0.6;kedy je softvérový projekt úspešný?
-Softvér;1.0.7;kedy je softvér úspešný?
-Vývoj softvéru;1.0.8;aký je rozdiel medzi vývojom softvéru a programovaním?
-Softvér;1.0.9;Čo označujeme ako biznis procesy  ? ako súvisia s tvorbou softvéru?
-biznis proces;1.0.9;Čo označujeme ako biznis procesy  ? ako súvisia s tvorbou softvéru?
+projekt;1.0.6;kedy je softvérový projekt úspešný?
+softvér;1.0.7;kedy je softvér úspešný?
+vývoj softvéru;1.0.8;aký je rozdiel medzi vývojom softvéru a programovaním?
+programovanie;1.0.8;aký je rozdiel medzi vývojom softvéru a programovaním?
+vývoj softvéru;1.0.9;Čo označujeme ako biznis procesy  ? ako súvisia s tvorbou softvéru?
 biznis analýza;1.0.9;Čo označujeme ako biznis procesy  ? ako súvisia s tvorbou softvéru?
-Vývoj softvéru;1.0.10;aké roly ľudí zainteresovaných na projekte (angl.  stakeholders ) rozlišujeme počas života softvéru?
-roly;1.0.10;aké roly ľudí zainteresovaných na projekte (angl.  stakeholders ) rozlišujeme počas života softvéru?
-Zákazník;1.0.11;aký je rozdiel medzi zákazníkom a používateľom?
+biznis proces;1.0.9;Čo označujeme ako biznis procesy  ? ako súvisia s tvorbou softvéru?
+zainteresovaný subjekt;1.0.10;aké roly ľudí zainteresovaných na projekte (angl.  stakeholders ) rozlišujeme počas života softvéru?
+zákazník;1.0.10;aké roly ľudí zainteresovaných na projekte (angl.  stakeholders ) rozlišujeme počas života softvéru?
+používateľ;1.0.10;aké roly ľudí zainteresovaných na projekte (angl.  stakeholders ) rozlišujeme počas života softvéru?
+zákazník;1.0.11;aký je rozdiel medzi zákazníkom a používateľom?
 používateľ;1.0.11;aký je rozdiel medzi zákazníkom a používateľom?
-Softvér;1.0.12;Čo je to program (v kontexte softvérového inžinierstva)?
 program;1.0.12;Čo je to program (v kontexte softvérového inžinierstva)?
-Softvér;1.0.13;Čo je to softvérový produkt? aký je rozdiel medzi programom a softvérovým produktom?
-program;1.0.13;Čo je to softvérový produkt? aký je rozdiel medzi programom a softvérovým produktom?
 softvérový produkt;1.0.13;Čo je to softvérový produkt? aký je rozdiel medzi programom a softvérovým produktom?
-Softvér;1.0.14;Čo je to systém?
+program;1.0.13;Čo je to softvérový produkt? aký je rozdiel medzi programom a softvérovým produktom?
 systém;1.0.14;Čo je to systém?
-Softvér;1.0.15;Čo je to programový systém?
-program;1.0.15;Čo je to programový systém?
-Softvér;1.0.16;Čo je to softvérový systém?
-program;1.0.16;Čo je to softvérový systém?
-Softvér;1.0.17;porovnajte zdroje potrebné na vývoj jednoduchého programu a vývoj takéhoto programu ako jednoduchého softvérového produktu.
+programový systém;1.0.15;Čo je to programový systém?
+softvérový systém;1.0.16;Čo je to softvérový systém?
+softvérový produkt;1.0.16;Čo je to softvérový systém?
 program;1.0.17;porovnajte zdroje potrebné na vývoj jednoduchého programu a vývoj takéhoto programu ako jednoduchého softvérového produktu.
+softvér;1.0.17;porovnajte zdroje potrebné na vývoj jednoduchého programu a vývoj takéhoto programu ako jednoduchého softvérového produktu.
 softvérový produkt;1.0.17;porovnajte zdroje potrebné na vývoj jednoduchého programu a vývoj takéhoto programu ako jednoduchého softvérového produktu.
-Program;1.0.18;porovnajte zdroje potrebné na vývoj jednoduchého programu a softvérového systému. 
+program;1.0.18;porovnajte zdroje potrebné na vývoj jednoduchého programu a softvérového systému. 
+programový systém;1.0.18;porovnajte zdroje potrebné na vývoj jednoduchého programu a softvérového systému. 
+softvér;1.0.18;porovnajte zdroje potrebné na vývoj jednoduchého programu a softvérového systému. 
+softvérový systém;1.0.18;porovnajte zdroje potrebné na vývoj jednoduchého programu a softvérového systému. 
 softvérový produkt;1.0.18;porovnajte zdroje potrebné na vývoj jednoduchého programu a softvérového systému. 
-Vývoj softvéru;1.0.19;Čo je to model vývoja softvéru? aké dva základné modely rozlišujeme?
-model vývoja;1.0.19;Čo je to model vývoja softvéru? aké dva základné modely rozlišujeme?
-Vývoj softvéru;1.0.20;vysvetlite pojem „iteratívne“, resp. „iterácia“ v súvislosti  s vývojom softvéru. 
-iterácia;1.0.20;vysvetlite pojem „iteratívne“, resp. „iterácia“ v súvislosti  s vývojom softvéru. 
-Vývoj softvéru;1.0.21;vysvetlite pojem „inkrementálne“, resp. „inkrement“ v súvislost i s vývojom softvéru. 
+vývoj softvéru;1.0.19;Čo je to model vývoja softvéru? aké dva základné modely rozlišujeme?
+model vývoja softvéru;1.0.19;Čo je to model vývoja softvéru? aké dva základné modely rozlišujeme?
+sekvenčný model;1.0.19;Čo je to model vývoja softvéru? aké dva základné modely rozlišujeme?
+iteratívno-inkrementálny model;1.0.19;Čo je to model vývoja softvéru? aké dva základné modely rozlišujeme?
+vývoj softvéru;1.0.20;vysvetlite pojem „iteratívne“, resp. „iterácia“ v súvislosti s vývojom softvéru . 
+iterácia;1.0.20;vysvetlite pojem „iteratívne“, resp. „iterácia“ v súvislosti s vývojom softvéru . 
+vývoj softvéru;1.0.21;vysvetlite pojem „inkrementálne“, resp. „inkrement“ v súvislost i s vývojom softvéru. 
 inkrement;1.0.21;vysvetlite pojem „inkrementálne“, resp. „inkrement“ v súvislost i s vývojom softvéru. 
-Vývoj softvéru;1.0.22;prečo je výhodné pristupovať k vývoju softvéru inkrementálne?
+inkrementálny model;1.0.22;prečo je výhodné pristupovať k vývoju softvéru inkrementálne?
 inkrement;1.0.22;prečo je výhodné pristupovať k vývoju softvéru inkrementálne?
-Vývoj softvéru;1.0.23;prečo je výhodné pristupovať k vývoju softvéru iteratívne?
+iteratívny model;1.0.23;prečo je výhodné pristupovať k vývoju softvéru iteratívne?
 iterácia;1.0.23;prečo je výhodné pristupovať k vývoju softvéru iteratívne?
-riziko;1.0.23;prečo je výhodné pristupovať k vývoju softvéru iteratívne?
-Vývoj softvéru;1.0.24;aká je najvýhodnejšia veľkosť prírastkov pri inkrementálnom vývoji softvéru?
+inkrementálny model;1.0.24;aká je najvýhodnejšia veľkosť prírastkov pri inkrementálnom vývoji softvéru?
 inkrement;1.0.24;aká je najvýhodnejšia veľkosť prírastkov pri inkrementálnom vývoji softvéru?
-Softvérový produkt;1.0.25;aké typy softvérových produktov podľa pôvodcu špecifikácie („objednávateľa“) poznáme  ? aký je medzi nimi rozdiel?
+softvérový produkt;1.0.25;aké typy softvérových produktov podľa pôvodcu špecifikácie („objednávateľa“) poznáme  ? aký je medzi nimi rozdiel?
 generický softvér;1.0.25;aké typy softvérových produktov podľa pôvodcu špecifikácie („objednávateľa“) poznáme  ? aký je medzi nimi rozdiel?
 zákaznícky softvér;1.0.25;aké typy softvérových produktov podľa pôvodcu špecifikácie („objednávateľa“) poznáme  ? aký je medzi nimi rozdiel?
-Softvérový produkt;1.0.26;uveďte príklady softvérových produktov generického typu.
 generický softvér;1.0.26;uveďte príklady softvérových produktov generického typu.
-Softvérový produkt;1.0.27;porovnajte typy softvéru cots a mots. Čo majú spoločné a čo rozdielne?
-generický softvér;1.0.27;porovnajte typy softvéru cots a mots. Čo majú spoločné a čo rozdielne?
-COTS;1.0.27;porovnajte typy softvéru cots a mots. Čo majú spoločné a čo rozdielne?
-MOTS;1.0.27;porovnajte typy softvéru cots a mots. Čo majú spoločné a čo rozdielne?
-Softvérový produkt;1.0.28;uveďte príklady softvérových produktov zákazníckeho typu.
+softvér COTS;1.0.27;porovnajte typy softvéru cots a mots. Čo majú spoločné a čo rozdielne?
+softvér MOTS;1.0.27;porovnajte typy softvéru cots a mots. Čo majú spoločné a čo rozdielne?
 zákaznícky softvér;1.0.28;uveďte príklady softvérových produktov zákazníckeho typu.
-Softvérový produkt;1.0.29;aké typy zainteresovaných subjektov (angl.  stakeholder  s ) na strane zákazníka možno rozlíšiť v prípade zákazníckeho softvéru?
 zákaznícky softvér;1.0.29;aké typy zainteresovaných subjektov (angl.  stakeholder  s ) na strane zákazníka možno rozlíšiť v prípade zákazníckeho softvéru?
-zainteresované subjekty;1.0.29;aké typy zainteresovaných subjektov (angl.  stakeholder  s ) na strane zákazníka možno rozlíšiť v prípade zákazníckeho softvéru?
-Softvérový výrobok;1.0.30;kto plní úlohu zákazníka v prípade generického softvéru?
+zákazník;1.0.29;aké typy zainteresovaných subjektov (angl.  stakeholder  s ) na strane zákazníka možno rozlíšiť v prípade zákazníckeho softvéru?
+zainteresovaný subjekt;1.0.29;aké typy zainteresovaných subjektov (angl.  stakeholder  s ) na strane zákazníka možno rozlíšiť v prípade zákazníckeho softvéru?
 generický softvér;1.0.30;kto plní úlohu zákazníka v prípade generického softvéru?
-zainteresované subjekty;1.0.30;kto plní úlohu zákazníka v prípade generického softvéru?
-Tvorba softvéru;1.1.1;prečo má zmysel hovoriť o špecifikách a problémoch tvorby softvéru?
-zákonité problémy;1.1.1;prečo má zmysel hovoriť o špecifikách a problémoch tvorby softvéru?
-Zákonité problémy<emphasis></emphasis>;1.1.2;vymenujte štyri základné podstatné vnútorné problémové vlastnosti softvéru. 
-Zložitosť;1.1.3;charakterizujte problém zložitosti v tvorbe softvéru.
-tvorba softvéru;1.1.3;charakterizujte problém zložitosti v tvorbe softvéru.
-zákonité problémy;1.1.3;charakterizujte problém zložitosti v tvorbe softvéru.
+zákazník;1.0.30;kto plní úlohu zákazníka v prípade generického softvéru?
+zainteresovaný subjekt;1.0.30;kto plní úlohu zákazníka v prípade generického softvéru?
+vývoj softvéru;1.1.1;prečo má zmysel hovoriť o špecifikách a problémoch tvorby softvéru?
+problém (pri tvorbe) softvéru;1.1.1;prečo má zmysel hovoriť o špecifikách a problémoch tvorby softvéru?
+zákonitý problém;1.1.2;vymenujte štyri základné podstatné vnútorné problémové vlastnosti softvéru. 
+zložitosť;1.1.2;vymenujte štyri základné podstatné vnútorné problémové vlastnosti softvéru. 
+podriadenosť;1.1.2;vymenujte štyri základné podstatné vnútorné problémové vlastnosti softvéru. 
+premenlivosť;1.1.2;vymenujte štyri základné podstatné vnútorné problémové vlastnosti softvéru. 
+neuchopiteľnosť;1.1.2;vymenujte štyri základné podstatné vnútorné problémové vlastnosti softvéru. 
+zložitosť;1.1.3;charakterizujte problém zložitosti v tvorbe softvéru.
 Brooksov zákon;1.1.3;charakterizujte problém zložitosti v tvorbe softvéru.
-Zložitosť;1.1.4;ako zmierniť problém zložitosti vo vývoji softvéru?
-tvorba softvéru;1.1.4;ako zmierniť problém zložitosti vo vývoji softvéru?
-zákonité problémy;1.1.4;ako zmierniť problém zložitosti vo vývoji softvéru?
-Podriadenosť;1.1.5;charakterizujte problém podriadenosti v tvorbe softvéru.
-tvorba softvéru;1.1.5;charakterizujte problém podriadenosti v tvorbe softvéru.
-zákonité problémy;1.1.5;charakterizujte problém podriadenosti v tvorbe softvéru.
-Podriadenosť;1.1.6;ako zmierniť problém s podriadenosťou vo vývoji softvéru? 
-tvorba softvéru;1.1.6;ako zmierniť problém s podriadenosťou vo vývoji softvéru? 
-zákonité problémy;1.1.6;ako zmierniť problém s podriadenosťou vo vývoji softvéru? 
-Premenlivosť;1.1.7;charakterizujte problém premenlivosti v tvorbe softvéru.
-tvorba softvéru;1.1.7;charakterizujte problém premenlivosti v tvorbe softvéru.
-zákonité problémy;1.1.7;charakterizujte problém premenlivosti v tvorbe softvéru.
-Premenlivosť;1.1.8;ako zmierniť problém s premenlivosťou vo vývoji softvéru? 
-tvorba softvéru;1.1.8;ako zmierniť problém s premenlivosťou vo vývoji softvéru? 
-zákonité problémy;1.1.8;ako zmierniť problém s premenlivosťou vo vývoji softvéru? 
-Neuchopiteľnosť;1.1.9;vysvetlite pojem neuchopiteľnosť softvéru. prečo ide o problém?
-tvorba softvéru;1.1.9;vysvetlite pojem neuchopiteľnosť softvéru. prečo ide o problém?
-zákonité problémy;1.1.9;vysvetlite pojem neuchopiteľnosť softvéru. prečo ide o problém?
-Neuchopiteľnosť;1.1.10;Čo je dôsledkom neuchopiteľnosti softvéru?
-tvorba softvéru;1.1.10;Čo je dôsledkom neuchopiteľnosti softvéru?
-zákonité problémy;1.1.10;Čo je dôsledkom neuchopiteľnosti softvéru?
-Neuchopiteľnosť;1.1.11;ako zmierniť problém s neuchopiteľnosťou vo vývoji softvéru?
-tvorba softvéru;1.1.11;ako zmierniť problém s neuchopiteľnosťou vo vývoji softvéru?
-zákonité problémy;1.1.11;ako zmierniť problém s neuchopiteľnosťou vo vývoji softvéru?
-Neuchopiteľnosť;1.1.12;vysvetlite, čo je príčinou syndrómu 90% hotovo?
-tvorba softvéru;1.1.12;vysvetlite, čo je príčinou syndrómu 90% hotovo?
-zákonité problémy;1.1.12;vysvetlite, čo je príčinou syndrómu 90% hotovo?
-Škálovateľnosť;1.1.13;Čo znamená pojem „problém mierky“ v softvérovom inžinierstve?
+zložitosť;1.1.4;ako zmierniť problém zložitosti vo vývoji softvéru?
+podriadenosť;1.1.5;charakterizujte problém podriadenosti v tvorbe softvéru.
+podriadenosť;1.1.6;ako zmierniť problém s podriadenosťou vo vývoji softvéru? 
+premenlivosť;1.1.7;charakterizujte problém premenlivosti v tvorbe softvéru.
+premenlivosť;1.1.8;ako zmierniť problém s premenlivosťou vo vývoji softvéru? 
+neuchopiteľnosť;1.1.9;vysvetlite pojem neuchopiteľnosť softvéru. prečo ide o problém?
+neuchopiteľnosť;1.1.10;Čo je dôsledkom neuchopiteľnosti softvéru?
+neuchopiteľnosť;1.1.11;ako zmierniť problém s neuchopiteľnosťou vo vývoji softvéru?
+syndróm 90 % hotovo;1.1.12;vysvetlite, čo je príčinou syndrómu 90% hotovo?
 problém mierky;1.1.13;Čo znamená pojem „problém mierky“ v softvérovom inžinierstve?
-Škálovateľnosť;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
 problém mierky;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
-Scrum;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
-manažment komunikácie;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
-manažment plánovania;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
-manažment verzií;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
-manažment zmien;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
-Škálovateľnosť;1.1.15;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť nie je ovplyvnená škálovaním projektu.
+všeobecný problém manažmentu projektu;1.1.14;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť je ohraničená rozsahom projektov (teda majú problém „škálovať“).
 problém mierky;1.1.15;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť nie je ovplyvnená škálovaním projektu.
-testovanie;1.1.15;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť nie je ovplyvnená škálovaním projektu.
-prototyp;1.1.15;uveďte príklady prístupov vo vývoji softvéru, ktorých použiteľnosť nie je ovplyvnená škálovaním projektu.
-Tvorba softvéru;1.1.16;Čo je to syndróm druhého projektu? stručne vysvetlite.
-Tvorba softvéru;1.1.17;softvérový systém vyvíja 50 ľudí v 3 krajinách (3 rôzne časové pásma). aké typy problémov spojené s tvorbou softvéru môžu nastať?
-manažment komunikácie;1.1.17;softvérový systém vyvíja 50 ľudí v 3 krajinách (3 rôzne časové pásma). aké typy problémov spojené s tvorbou softvéru môžu nastať?
-manažment plánovania;1.1.17;softvérový systém vyvíja 50 ľudí v 3 krajinách (3 rôzne časové pásma). aké typy problémov spojené s tvorbou softvéru môžu nastať?
-Degenerácia softvéru;1.1.18;Čo je to degenerácia softvéru?
-údržba;1.1.18;Čo je to degenerácia softvéru?
-Degenerácia softvéru;1.1.19;prečo po určitom čase používania softvéru počet chýb v~ňom spravidla stúpa, hoci na rozdiel od hardvéru, či iných zariadení sa programové inštrukcie neopotrebúvajú? 
-údržba;1.1.19;prečo po určitom čase používania softvéru počet chýb v~ňom spravidla stúpa, hoci na rozdiel od hardvéru, či iných zariadení sa programové inštrukcie neopotrebúvajú? 
-Projekt;1.1.20;kedy a prečo vznikol pojem softvérová kríza?
-tvorba softvéru;1.1.20;kedy a prečo vznikol pojem softvérová kríza?
-Opakovateľnosť;1.1.21;vysvetlite, čo znamená slabá opakovateľnosť v tvorbe softvéru. 
-tvorba softvéru;1.1.21;vysvetlite, čo znamená slabá opakovateľnosť v tvorbe softvéru. 
-Softvérové inžinierstvo;1.1.22;porovnajte softvérové inžinierstvo a stavebné inžinierstvo.
-Kvalita;1.2.1;vysvetlite pojem kvalita softvéru.
-Kvalita;1.2.2;voči čomu sa posudzuje kvalita softvéru?
-Kvalita;1.2.3;môžeme prehlásiť softvér obsahujúci chyby za kvalitný? zdôvodnite.
-Verifikácia;1.2.4;Čo je to verifikácia softvéru?
-Validácia;1.2.5;Čo je to validácia softvéru?
-Validácia;1.2.6;aký je rozdiel medzi verifikáciou a validáciou softvéru?
-verifikácia;1.2.6;aký je rozdiel medzi verifikáciou a validáciou softvéru?
-Kvalita;1.2.7;ktoré tri hľadiská determinujú kvalitu v softvérovom inžinierstve (kvalitu vývoja softvéru)?
+syndróm druhého projektu;1.1.16;Čo je to syndróm druhého projektu? stručne vysvetlite.
+všeobecný problém manažmentu projektu;1.1.17;softvérový systém vyvíja 50 ľudí v 3 krajinách (3 rôzne časové pásma). aké typy problémov spojené s tvorbou softvéru môžu nastať?
+degenerácia softvéru;1.1.18;Čo je to degenerácia softvéru?
+degenerácia softvéru;1.1.19;prečo po určitom čase používania softvéru počet chýb v~ňom spravidla stúpa, hoci na rozdiel od hardvéru, či iných zariadení sa programové inštrukcie neopotrebúvajú? 
+softvérová kríza;1.1.20;kedy a prečo vznikol pojem softvérová kríza?
+slabá opakovateľnosť;1.1.21;vysvetlite, čo znamená slabá opakovateľnosť v tvorbe softvéru. 
+softvérové inžinierstvo;1.1.22;porovnajte softvérové inžinierstvo a stavebné inžinierstvo.
+problém (pri tvorbe) softvéru;1.1.22;porovnajte softvérové inžinierstvo a stavebné inžinierstvo.
+kvalita softvéru;1.2.1;vysvetlite pojem kvalita softvéru.
+funkcionálna kvalita;1.2.1;vysvetlite pojem kvalita softvéru.
+štrukturálna kvalita;1.2.1;vysvetlite pojem kvalita softvéru.
+kvalita softvéru;1.2.2;voči čomu sa posudzuje kvalita softvéru?
+potreba;1.2.2;voči čomu sa posudzuje kvalita softvéru?
+požiadavka na softvér;1.2.2;voči čomu sa posudzuje kvalita softvéru?
+kvalita softvéru;1.2.3;môžeme prehlásiť softvér obsahujúci chyby za kvalitný? zdôvodnite.
+verifikácia softvéru;1.2.4;Čo je to verifikácia softvéru?
+validácia softvéru;1.2.5;Čo je to validácia softvéru?
+validácia softvéru;1.2.6;aký je rozdiel medzi verifikáciou a validáciou softvéru?
+verifikácia softvéru;1.2.6;aký je rozdiel medzi verifikáciou a validáciou softvéru?
+kvalita softvérového projektu;1.2.7;ktoré tri hľadiská determinujú kvalitu v softvérovom inžinierstve (kvalitu vývoja softvéru)?
 hľadisko kvality;1.2.7;ktoré tri hľadiská determinujú kvalitu v softvérovom inžinierstve (kvalitu vývoja softvéru)?
-Kvalita;1.2.8;diskutujte pohyblivosť a striktnosť hľadísk (čas, náklady a požiadavky) determinujúcich kvalitu v softvérovom inžinierstve (vývoji softvéru).
+dohodnutý rozsah (požiadavky);1.2.7;ktoré tri hľadiská determinujú kvalitu v softvérovom inžinierstve (kvalitu vývoja softvéru)?
+dohodnuté náklady;1.2.7;ktoré tri hľadiská determinujú kvalitu v softvérovom inžinierstve (kvalitu vývoja softvéru)?
+dohodnutý čas;1.2.7;ktoré tri hľadiská determinujú kvalitu v softvérovom inžinierstve (kvalitu vývoja softvéru)?
 hľadisko kvality;1.2.8;diskutujte pohyblivosť a striktnosť hľadísk (čas, náklady a požiadavky) determinujúcich kvalitu v softvérovom inžinierstve (vývoji softvéru).
-Kvalita;1.2.9;ktoré hľadiská kvality vývoja softvéru sú spravidla fixné (fixované) v prípade zákazníckeho softvéru?
+dohodnutý rozsah (požiadavky);1.2.8;diskutujte pohyblivosť a striktnosť hľadísk (čas, náklady a požiadavky) determinujúcich kvalitu v softvérovom inžinierstve (vývoji softvéru).
+dohodnuté náklady;1.2.8;diskutujte pohyblivosť a striktnosť hľadísk (čas, náklady a požiadavky) determinujúcich kvalitu v softvérovom inžinierstve (vývoji softvéru).
+dohodnutý čas;1.2.8;diskutujte pohyblivosť a striktnosť hľadísk (čas, náklady a požiadavky) determinujúcich kvalitu v softvérovom inžinierstve (vývoji softvéru).
 hľadisko kvality;1.2.9;ktoré hľadiská kvality vývoja softvéru sú spravidla fixné (fixované) v prípade zákazníckeho softvéru?
-Kvalita;1.2.10;ktoré hľadisko kvality vývoja softvéru spravidla závisí (mení sa) od fixácie iných faktorov  v prípade zákazníckeho softvéru?
 hľadisko kvality;1.2.10;ktoré hľadisko kvality vývoja softvéru spravidla závisí (mení sa) od fixácie iných faktorov  v prípade zákazníckeho softvéru?
-Kvalita;1.2.11;ktoré hľadiská kvality vývoja softvéru sú spravidla fixné (fixované) v prípade generického softvéru?
 hľadisko kvality;1.2.11;ktoré hľadiská kvality vývoja softvéru sú spravidla fixné (fixované) v prípade generického softvéru?
-Kvalita;1.2.12;porovnajte mieru fixácie úrovne splnenia požiadaviek pre generický a pre zákaznícky softvér.
 hľadisko kvality;1.2.12;porovnajte mieru fixácie úrovne splnenia požiadaviek pre generický a pre zákaznícky softvér.
-Vlastnosti;1.2.13;vymenujte a definujte vlastnosti softvéru (hľadiská podľa ktorých možno posudzovať kvalitu softvéru).
-Vlastnosti;1.2.14;ak máme existujúci softvér, môžeme s ním vo všeobecnosti robiť tri typy aktivít: používať ho, meniť ho a prenášať ho (do nových prostredí, kde má pôsobiť). ako by ste vlastnosti softvéru (z otázky **vlastnosti-softveru**) rozdelili podľa ich relatívnej dôležitosti pre tieto aktivity? inými slovami, ktoré vlastnosti ovplyvňujú používanie, ktoré prenos a ktoré zmenu softvéru?
-Vlastnosti;1.2.15;prečo spravidla netrváme na tom, aby bol softvér kvalitný vo všetkých hľadiskách?
-Spoľahlivosť;1.2.16;ako sa posudzuje spoľahlivosť softvéru?
-vlastnosti;1.2.16;ako sa posudzuje spoľahlivosť softvéru?
-Použiteľnosť;1.2.17;softvér a má 18 funkcií a zaškolenie používateľa trvá 3~dni. softvér b má 22~funkcií a zaškolenie používateľa trvá 5~dní. ktorý softvérový výrobok má vyššiu použiteľnosť?
-vlastnosti;1.2.17;softvér a má 18 funkcií a zaškolenie používateľa trvá 3~dni. softvér b má 22~funkcií a zaškolenie používateľa trvá 5~dní. ktorý softvérový výrobok má vyššiu použiteľnosť?
-Interoperabilita;1.2.18;softvér a ukladá výstupy do vlastného efektívneho formátu, ktorého tvar nie je známy. softvér b ukladá výstupy do štandardného formátu (xml). ktorý softvér má menšiu interoperabilitu?
-vlastnosti;1.2.18;softvér a ukladá výstupy do vlastného efektívneho formátu, ktorého tvar nie je známy. softvér b ukladá výstupy do štandardného formátu (xml). ktorý softvér má menšiu interoperabilitu?
-Vlastnosti;1.2.19;uveďte príklad dvojice vlastností softvéru, ktoré sú si navzájom v protiklade (zvyšovanie jednej pri zachovaní miery úsilia má tendenciu znižovať úroveň druhej).
-Správnosť;1.2.20;je správnosť softvérového produktu postačujúcou podmienkou kvalitného softvéru?
-vlastnosti;1.2.20;je správnosť softvérového produktu postačujúcou podmienkou kvalitného softvéru?
-Použiteľnosť;1.2.21;uveďte príklad dvoch zmysluplných, no vzájomne rozporných požiadaviek na softvér z hľadiska použiteľnosti.
-vlastnosti;1.2.21;uveďte príklad dvoch zmysluplných, no vzájomne rozporných požiadaviek na softvér z hľadiska použiteľnosti.
-Vlastnosti;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
-bezpečnosť;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
-použiteľnosť;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
-efektívnosť;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
-znovupoužiteľnosť;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
-Vlastnosti;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
-udržovateľnosť;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
-bezpečnosť;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
-použiteľnosť;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
-prenosnosť;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
-Vlastnosti;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
-použiteľnosť;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
-robustnosť;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
-bezpečnosť voči okoliu;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
-modifikovateľnosť;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
-Vlastnosti;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
-spoľahlivosť;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
-pokrytie dokumentáciou;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
-znovupoužiteľnosť;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
-prenosnosť;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
-Softvérový proces;1.3.1;Čo je to softvérový proces? Čo presne znamená  vývoj softvéru ?
-Vývoj softvéru;1.3.2;aké činnosti sa vykonávajú počas života softvéru?
+vlastnosť softvéru;1.2.13;vymenujte a definujte vlastnosti softvéru (hľadiská podľa ktorých možno posudzovať kvalitu softvéru).
+vlastnosť softvéru;1.2.14;ak máme existujúci softvér, môžeme s ním vo všeobecnosti robiť tri typy aktivít: používať ho, meniť ho a prenášať ho (do nových prostredí, kde má pôsobiť). ako by ste vlastnosti softvéru (z otázky **vlastnosti-softveru**) rozdelili podľa ich relatívnej dôležitosti pre tieto aktivity? inými slovami, ktoré vlastnosti ovplyvňujú používanie, ktoré prenos a ktoré zmenu softvéru?
+kvalita softvéru;1.2.15;prečo spravidla netrváme na tom, aby bol softvér kvalitný vo všetkých hľadiskách?
+vlastnosť softvéru;1.2.15;prečo spravidla netrváme na tom, aby bol softvér kvalitný vo všetkých hľadiskách?
+spoľahlivosť;1.2.16;ako sa posudzuje spoľahlivosť softvéru?
+použiteľnosť;1.2.17;softvér a má 18 funkcií a zaškolenie používateľa trvá 3~dni. softvér b má 22~funkcií a zaškolenie používateľa trvá 5~dní. ktorý softvérový výrobok má vyššiu použiteľnosť?
+interoperabilita;1.2.18;softvér a ukladá výstupy do vlastného efektívneho formátu, ktorého tvar nie je známy. softvér b ukladá výstupy do štandardného formátu (xml). ktorý softvér má menšiu interoperabilitu?
+vlastnosť softvéru;1.2.19;uveďte príklad dvojice vlastností softvéru, ktoré sú si navzájom v protiklade (zvyšovanie jednej pri zachovaní miery úsilia má tendenciu znižovať úroveň druhej).
+správnosť;1.2.20;je správnosť softvérového produktu postačujúcou podmienkou kvalitného softvéru?
+použiteľnosť;1.2.21;uveďte príklad dvoch zmysluplných, no vzájomne rozporných požiadaviek na softvér z hľadiska použiteľnosti.
+vlastnosť softvéru;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
+vlastnosť softvéru;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
+vlastnosť softvéru;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
+vlastnosť softvéru;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
+vývoj softvéru;1.3.1;Čo je to softvérový proces? Čo presne znamená  vývoj softvéru ?
+identifikácia potreby;1.3.1;Čo je to softvérový proces? Čo presne znamená  vývoj softvéru ?
 životný cyklus softvéru;1.3.2;aké činnosti sa vykonávajú počas života softvéru?
-Vývoj softvéru;1.3.3;akou činnosťou začína vývoj softvéru?
-štúdia vhodnosti;1.3.3;akou činnosťou začína vývoj softvéru?
-Softvérový proces;1.3.4;aké generické modely vývoja softvéru poznáme?
-Model softvérového procesu;1.3.4;aké generické modely vývoja softvéru poznáme?
-Vývoj softvéru;1.3.5;aký je rozdiel medzi modelom vývoja softvéru a metodológiou vývoja softvéru?
-metodológia vývoja;1.3.5;aký je rozdiel medzi modelom vývoja softvéru a metodológiou vývoja softvéru?
-model softvérového procesu;1.3.5;aký je rozdiel medzi modelom vývoja softvéru a metodológiou vývoja softvéru?
-Softvérový projekt;1.3.6;Čo je to softvérový projekt? ako sa líši od iných projektov?
-Manažment softvérového projektu;1.3.7;Čo znamená manažovať softvérový projekt? aké procesy (činnosti) manažment softvérového projektu zahŕňa?
-proces manažmentu softvérového projektu;1.3.7;Čo znamená manažovať softvérový projekt? aké procesy (činnosti) manažment softvérového projektu zahŕňa?
-Manažment softvérového projektu;1.3.8;Čo je hlavný cieľ manažmentu projektu?
+analýza (požiadaviek);1.3.3;akou činnosťou začína vývoj softvéru?
+biznis analýza;1.3.3;akou činnosťou začína vývoj softvéru?
+špecifikácia požiadaviek;1.3.3;akou činnosťou začína vývoj softvéru?
+model vývoja softvéru;1.3.4;aké generické modely vývoja softvéru poznáme?
+vodopádový model;1.3.4;aké generické modely vývoja softvéru poznáme?
+iteratívno-inkrementálny model;1.3.4;aké generické modely vývoja softvéru poznáme?
+model vývoja softvéru;1.3.5;aký je rozdiel medzi modelom vývoja softvéru a metodológiou vývoja softvéru?
+metodológia vývoja softvéru;1.3.5;aký je rozdiel medzi modelom vývoja softvéru a metodológiou vývoja softvéru?
+softvérový projekt;1.3.6;Čo je to softvérový projekt? ako sa líši od iných projektov?
+projekt;1.3.6;Čo je to softvérový projekt? ako sa líši od iných projektov?
+vývoj softvéru;1.3.6;Čo je to softvérový projekt? ako sa líši od iných projektov?
+manažment projektu;1.3.6;Čo je to softvérový projekt? ako sa líši od iných projektov?
+manažment projektu;1.3.7;Čo znamená manažovať softvérový projekt? aké procesy (činnosti) manažment softvérového projektu zahŕňa?
+manažment projektu;1.3.8;Čo je hlavný cieľ manažmentu projektu?
 trojuholník manažmentu projektu;1.3.8;Čo je hlavný cieľ manažmentu projektu?
-Manažment softvérového projektu;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
-trojuholník manažmentu projektu;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
-kvalita;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
-Projekt;1.3.10;od čoho závisí, či bude softvérový projekt úspešný?
+softvérový projekt;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
+hľadisko kvality;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
+kvalita softvérového projektu;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
+kvalita softvéru;1.3.9;kedy považujeme softvérový projekt za úspešný? aký je rozdiel medzi úspešnosťou produktu a projektu (v kontexte kvality).
 softvérový projekt;1.3.10;od čoho závisí, či bude softvérový projekt úspešný?
-Softvérový projekt;1.3.11;aká je úspešnosť softvérových projektov v praxi?
-Manažment softvérového projektu;1.3.11;aká je úspešnosť softvérových projektov v praxi?
-Vývoj softvéru;1.3.12;aké sú najčastejšie príčiny zlyhania vývoja softvéru?
-Manažment softvérového projektu;1.3.12;aké sú najčastejšie príčiny zlyhania vývoja softvéru?
-Manažment softvérového projektu;1.3.13;existujú metodológie aj pre manažment (softvérového) projektu?
+softvérový projekt;1.3.11;aká je úspešnosť softvérových projektov v praxi?
+softvérový projekt;1.3.12;aké sú najčastejšie príčiny zlyhania vývoja softvéru?
+vývoj softvéru;1.3.12;aké sú najčastejšie príčiny zlyhania vývoja softvéru?
+manažment projektu;1.3.12;aké sú najčastejšie príčiny zlyhania vývoja softvéru?
 metodológia manažmentu projektu;1.3.13;existujú metodológie aj pre manažment (softvérového) projektu?
-Komunikácia;1.3.14;aká je najdôležitejšia súčasť práce projektového manažéra? 
-Riziko;1.3.15;vysvetlite pojem „riziko“ pri tvorbe softvéru.
-Riziko;1.3.16;aké sú základné riziká pri tvorbe softvéru?
-trojuholník manažmentu projektu;1.3.16;aké sú základné riziká pri tvorbe softvéru?
+projektový manažér;1.3.14;aká je najdôležitejšia súčasť práce projektového manažéra? 
+komunikácia;1.3.14;aká je najdôležitejšia súčasť práce projektového manažéra? 
+riziko;1.3.15;vysvetlite pojem „riziko“ pri tvorbe softvéru.
+projektové riziko;1.3.15;vysvetlite pojem „riziko“ pri tvorbe softvéru.
+produktové riziko;1.3.15;vysvetlite pojem „riziko“ pri tvorbe softvéru.
+biznis riziko;1.3.15;vysvetlite pojem „riziko“ pri tvorbe softvéru.
+projektové riziko;1.3.16;aké sú základné riziká pri tvorbe softvéru?
 človeko-deň;1.3.17;Čo označujeme ako človeko-deň?
-Etapy životného cyklu;2.0.1;vymenujte a vysvetlite etapy životného cyklu softvéru (softvérového produktu).
-Údržba;2.0.2;ktorá etapa životného cyklu softvéru nás stojí najviac?
-Testovanie;2.0.3;v ktorých etapách vývoja softvéru sa testuje/overuje? 
-Dokumentácia;2.0.4;v ktorých etapách životného cyklu softvéru sa tvorí dokumentácia?
-Návrh;2.0.5;v akej etape životného cyklu softvéru sa rozhoduje, ako bude softvér realizovaný?
-Analýza;2.0.6;v akej etape životného cyklu softvéru sa rozhoduje, čo sa bude realizovať?
+životný cyklus softvéru;2.0.1;vymenujte a vysvetlite etapy životného cyklu softvéru (softvérového produktu).
+vývoj softvéru;2.0.1;vymenujte a vysvetlite etapy životného cyklu softvéru (softvérového produktu).
+prevádzka a údržba softvéru;2.0.1;vymenujte a vysvetlite etapy životného cyklu softvéru (softvérového produktu).
+vyradenie softvéru;2.0.1;vymenujte a vysvetlite etapy životného cyklu softvéru (softvérového produktu).
+údržba softvéru;2.0.2;ktorá etapa životného cyklu softvéru nás stojí najviac?
+testovanie softvéru (v širšom zmysle);2.0.3;v ktorých etapách vývoja softvéru sa testuje/overuje? 
+dokumentácia;2.0.4;v ktorých etapách životného cyklu softvéru sa tvorí dokumentácia?
+návrh softvéru;2.0.5;v akej etape životného cyklu softvéru sa rozhoduje, ako bude softvér realizovaný?
+analýza (požiadaviek);2.0.6;v akej etape životného cyklu softvéru sa rozhoduje, čo sa bude realizovať?
 špecifikácia požiadaviek;2.0.6;v akej etape životného cyklu softvéru sa rozhoduje, čo sa bude realizovať?
-Údržba;2.0.7;rádovo koľkokrát sa môže počas údržby softvéru predražiť oprava chyby vzniknutej v etape analýzy?
-Etapy životného cyklu;2.0.8;výstupom ktorej etapy životného cyklu softvéru sú modely vyvíjaného softvéru?
+údržba softvéru;2.0.7;rádovo koľkokrát sa môže počas údržby softvéru predražiť oprava chyby vzniknutej v etape analýzy?
+návrh softvéru;2.0.8;výstupom ktorej etapy životného cyklu softvéru sú modely vyvíjaného softvéru?
 model softvéru;2.0.8;výstupom ktorej etapy životného cyklu softvéru sú modely vyvíjaného softvéru?
-Analýza;2.0.9;aký je rozdiel medzi analýzou a návrhom softvéru?
-Návrh;2.0.9;aký je rozdiel medzi analýzou a návrhom softvéru?
-Špecifikácia;2.0.10;v ktorej fáze vývoja softvéru sa stanovuje, čo zákazník očakáva od softvéru?
-Štúdia vhodnosti;2.1.1;Čo je to štúdia uskutočniteľnosti a čo je jej výstup?
-Štúdia vhodnosti;2.1.2;aké sú najdôležitejšie vlastnosti štúdie uskutočniteľnosti?
-Štúdia vhodnosti;2.1.3;aké techniky sa využívajú pri štúdii uskutočniteľnosti?
-Štúdia vhodnosti;2.1.4;ako by ste postupovali pri štúdii uskutočniteľnosti na príklade univerzitného softvéru na zdieľanie prepravy v osobných autách (carpooling)? predpokladajte, že na vytvorenie softvéru by bolo vyhradených 9 mesiacov práce troch vývojárov.
-Analýza;2.1.5;aké činnosti vykonávame v etape analýzy?
-Biznis modelovanie;2.1.6;Čo je to biznis modelovanie?
-Biznis modelovanie;2.1.7;prečo má biznis modelovanie význam pre softvérové inžinierstvo?
-Biznis proces;2.1.8;Čo je to biznis proces?
-biznis modelovanie;2.1.8;Čo je to biznis proces?
-Biznis proces;2.1.9;aké techniky používame na modelovanie biznis procesov?
+analýza (požiadaviek);2.0.9;aký je rozdiel medzi analýzou a návrhom softvéru?
+návrh softvéru;2.0.9;aký je rozdiel medzi analýzou a návrhom softvéru?
+špecifikácia požiadaviek;2.0.10;v ktorej fáze vývoja softvéru sa stanovuje, čo zákazník očakáva od softvéru?
+štúdia uskutočniteľnosti;2.1.1;Čo je to štúdia uskutočniteľnosti a čo je jej výstup?
+štúdia uskutočniteľnosti;2.1.2;aké sú najdôležitejšie vlastnosti štúdie uskutočniteľnosti?
+štúdia uskutočniteľnosti;2.1.3;aké techniky sa využívajú pri štúdii uskutočniteľnosti?
+štúdia uskutočniteľnosti;2.1.4;ako by ste postupovali pri štúdii uskutočniteľnosti na príklade univerzitného softvéru na zdieľanie prepravy v osobných autách (carpooling)? predpokladajte, že na vytvorenie softvéru by bolo vyhradených 9 mesiacov práce troch vývojárov.
+analýza (požiadaviek);2.1.5;aké činnosti vykonávame v etape analýzy?
+biznis analýza;2.1.5;aké činnosti vykonávame v etape analýzy?
+špecifikácia požiadaviek;2.1.5;aké činnosti vykonávame v etape analýzy?
+biznis modelovanie;2.1.6;Čo je to biznis modelovanie?
+biznis model;2.1.6;Čo je to biznis modelovanie?
+biznis modelovanie;2.1.7;prečo má biznis modelovanie význam pre softvérové inžinierstvo?
+biznis model;2.1.7;prečo má biznis modelovanie význam pre softvérové inžinierstvo?
+biznis proces;2.1.8;Čo je to biznis proces?
 biznis modelovanie;2.1.9;aké techniky používame na modelovanie biznis procesov?
-Biznis proces;2.1.10;ktoré z nasledujúcich názvov aktivít biznis procesov z príkladu na zdieľanie automobilov (car-pooling) zrejme nie sú správne? prečo? (údržba databázy, vytvorenie ponuky na prepravu, mapa trás, registrácia používateľov, preprava, zadanie cieľa cesty, vyhodnotenie prepravy)
-biznis modelovanie;2.1.10;ktoré z nasledujúcich názvov aktivít biznis procesov z príkladu na zdieľanie automobilov (car-pooling) zrejme nie sú správne? prečo? (údržba databázy, vytvorenie ponuky na prepravu, mapa trás, registrácia používateľov, preprava, zadanie cieľa cesty, vyhodnotenie prepravy)
-Prieskum problémovej oblasti;2.1.11;aké techniky prieskumu problémovej oblasti poznáme v~rámci analýzy v softvérovom projekte? stručne ich opíšte.
-Prieskum problémovej oblasti;2.1.12;prečo vykonávame prieskum problémovej oblasti v analýze v softvérovom projekte?
-Analýza;2.1.13;predstavte si, že v rámci analýzy projektu univerzitného zdieľania áut (car-pooling) máte za úlohu zmapovať problémovú oblasť. ako by ste postupovali a aké techniky by ste uplatnili?
-zber požiadaviek;2.1.13;predstavte si, že v rámci analýzy projektu univerzitného zdieľania áut (car-pooling) máte za úlohu zmapovať problémovú oblasť. ako by ste postupovali a aké techniky by ste uplatnili?
-Zber požiadaviek;2.1.14;zhodnoťte techniku pozorovania ako prostriedku pre získavanie informácií o problémovej oblasti.
-Personas;2.1.15;vysvetlite pojem „persóna“?
-analýza;2.1.15;vysvetlite pojem „persóna“?
-zber požiadaviek;2.1.15;vysvetlite pojem „persóna“?
-Požiadavky;2.1.16;porovnajte pojmy funkcionálne a nefunkcionálne požiadavky na softvér.
-funkcionálne požiadavky;2.1.16;porovnajte pojmy funkcionálne a nefunkcionálne požiadavky na softvér.
-nefunkcionálne požiadavky;2.1.16;porovnajte pojmy funkcionálne a nefunkcionálne požiadavky na softvér.
-nefunkcionálne požiadavky;2.1.17;uveďte príklad nefunkcionálnej požiadavky na softvér.
-Špecifikácia;2.1.18;aký je hlavný rozdiel medzi dokumentmi „špecifikácia požiadaviek (na softvér)“ a „špecifikácia softvéru“.
-návrh;2.1.18;aký je hlavný rozdiel medzi dokumentmi „špecifikácia požiadaviek (na softvér)“ a „špecifikácia softvéru“.
-Požiadavky;2.1.19;Čo je to externá požiadavka na softvér?
-Požiadavky;2.1.20;Čo môže vyvolať externú požiadavku na softvér (uveďte príklady)?
-Požiadavky;2.1.21;uveďte vlastnosti dobrej špecifikácie požiadaviek.
-vlastnosti požiadaviek;2.1.21;uveďte vlastnosti dobrej špecifikácie požiadaviek.
-Požiadavky;2.1.22;prečo je dôležitá merateľnosť požiadaviek?
-vlastnosti požiadaviek;2.1.22;prečo je dôležitá merateľnosť požiadaviek?
-merateľnosť požiadaviek;2.1.22;prečo je dôležitá merateľnosť požiadaviek?
-Požiadavky;2.1.23;aká je základná/nevyhnutná vlastnosť každej požiadavky na softvér? prečo?
-vlastnosti požiadaviek;2.1.23;aká je základná/nevyhnutná vlastnosť každej požiadavky na softvér? prečo?
-merateľnosť požiadaviek;2.1.23;aká je základná/nevyhnutná vlastnosť každej požiadavky na softvér? prečo?
-Vlastnosti požiadaviek;2.1.24;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – úplnosť alebo sledovateľnosť? vysvetlite prečo.
-sledovateľnosť požiadaviek;2.1.24;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – úplnosť alebo sledovateľnosť? vysvetlite prečo.
-úplnosť požiadaviek;2.1.24;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – úplnosť alebo sledovateľnosť? vysvetlite prečo.
-Vlastnosti požiadaviek;2.1.25;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – merateľnosť alebo konzistentnosť? vysvetlite prečo.
-merateľnosť požiadaviek;2.1.25;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – merateľnosť alebo konzistentnosť? vysvetlite prečo.
-konzistentnosť požiadaviek;2.1.25;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – merateľnosť alebo konzistentnosť? vysvetlite prečo.
-Vlastnosti požiadaviek;2.1.26;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – sledovateľnosť alebo zoradenie požiadaviek podľa dôležitosti? vysvetlite prečo.
-sledovateľnosť požiadaviek;2.1.26;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – sledovateľnosť alebo zoradenie požiadaviek podľa dôležitosti? vysvetlite prečo.
-zoradenie požiadaviek podľa dôležitosti;2.1.26;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – sledovateľnosť alebo zoradenie požiadaviek podľa dôležitosti? vysvetlite prečo.
-Požiadavky;2.1.27;kto vykonáva validáciu požiadaviek na softvér?
-validácia;2.1.27;kto vykonáva validáciu požiadaviek na softvér?
-Požiadavky;2.1.28;ako zabezpečujeme konzistentnosť požiadaviek na softvér?
-vlastnosti požiadaviek;2.1.28;ako zabezpečujeme konzistentnosť požiadaviek na softvér?
-konzistentnosť požiadaviek;2.1.28;ako zabezpečujeme konzistentnosť požiadaviek na softvér?
-Požiadavky;2.1.29;ako zabezpečujeme jednoznačnosť požiadaviek na softvér?
-vlastnosti požiadaviek;2.1.29;ako zabezpečujeme jednoznačnosť požiadaviek na softvér?
-jednoznačnosť požiadaviek;2.1.29;ako zabezpečujeme jednoznačnosť požiadaviek na softvér?
-Požiadavky;2.1.30;uveďte problémy vznikajúce pri špecifikácii požiadaviek na softvér.
-vlastnosti požiadaviek;2.1.30;uveďte problémy vznikajúce pri špecifikácii požiadaviek na softvér.
-Požiadavky;2.1.31;aká činnosť je, z hľadiska testovania, neoddeliteľnou časťou tvorby požiadaviek na softvér?
+BPMN;2.1.9;aké techniky používame na modelovanie biznis procesov?
+UML;2.1.9;aké techniky používame na modelovanie biznis procesov?
+biznis proces;2.1.10;ktoré z nasledujúcich názvov aktivít biznis procesov z príkladu na zdieľanie automobilov (car-pooling) zrejme nie sú správne? prečo? (údržba databázy, vytvorenie ponuky na prepravu, mapa trás, registrácia používateľov, preprava, zadanie cieľa cesty, vyhodnotenie prepravy)
+prieskum problémovej oblasti;2.1.11;aké techniky prieskumu problémovej oblasti poznáme v~rámci analýzy v softvérovom projekte? stručne ich opíšte.
+prieskum problémovej oblasti;2.1.12;prečo vykonávame prieskum problémovej oblasti v analýze v softvérovom projekte?
+prieskum problémovej oblasti;2.1.13;predstavte si, že v rámci analýzy projektu univerzitného zdieľania áut (car-pooling) máte za úlohu zmapovať problémovú oblasť. ako by ste postupovali a aké techniky by ste uplatnili?
+zber požiadaviek;2.1.14;zhodnoťte techniku pozorovania ako prostriedku pre získavanie informácií o problémovej oblasti.
+persóna;2.1.15;vysvetlite pojem „persóna“?
+používateľ;2.1.15;vysvetlite pojem „persóna“?
+požiadavka na softvér;2.1.16;porovnajte pojmy funkcionálne a nefunkcionálne požiadavky na softvér.
+funkcionálna požiadavka;2.1.16;porovnajte pojmy funkcionálne a nefunkcionálne požiadavky na softvér.
+nefunkcionálna požiadavka;2.1.16;porovnajte pojmy funkcionálne a nefunkcionálne požiadavky na softvér.
+nefunkcionálna požiadavka;2.1.17;uveďte príklad nefunkcionálnej požiadavky na softvér.
+špecifikácia požiadaviek;2.1.18;aký je hlavný rozdiel medzi dokumentmi „špecifikácia požiadaviek (na softvér)“ a „špecifikácia softvéru“.
+špecifikácia softvéru;2.1.18;aký je hlavný rozdiel medzi dokumentmi „špecifikácia požiadaviek (na softvér)“ a „špecifikácia softvéru“.
+externá požiadavka;2.1.19;Čo je to externá požiadavka na softvér?
+externá požiadavka;2.1.20;Čo môže vyvolať externú požiadavku na softvér (uveďte príklady)?
+vlastnosť požiadavky (individuálna);2.1.21;uveďte vlastnosti dobrej špecifikácie požiadaviek.
+vlastnosť špecifikácie (celková);2.1.21;uveďte vlastnosti dobrej špecifikácie požiadaviek.
+merateľnosť;2.1.22;prečo je dôležitá merateľnosť požiadaviek?
+merateľnosť;2.1.23;aká je základná/nevyhnutná vlastnosť každej požiadavky na softvér? prečo?
+zoradenie podľa dôležitosti;2.1.23;aká je základná/nevyhnutná vlastnosť každej požiadavky na softvér? prečo?
+úplnosť;2.1.24;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – úplnosť alebo sledovateľnosť? vysvetlite prečo.
+sledovateľnosť;2.1.24;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – úplnosť alebo sledovateľnosť? vysvetlite prečo.
+merateľnosť;2.1.25;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – merateľnosť alebo konzistentnosť? vysvetlite prečo.
+konzistentnosť;2.1.25;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – merateľnosť alebo konzistentnosť? vysvetlite prečo.
+zoradenie podľa dôležitosti;2.1.26;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – sledovateľnosť alebo zoradenie požiadaviek podľa dôležitosti? vysvetlite prečo.
+sledovateľnosť;2.1.26;ktorá vlastnosť špecifikácie požiadaviek je dôležitejšia – sledovateľnosť alebo zoradenie požiadaviek podľa dôležitosti? vysvetlite prečo.
+požiadavka na softvér;2.1.27;kto vykonáva validáciu požiadaviek na softvér?
+validácia požiadavky;2.1.27;kto vykonáva validáciu požiadaviek na softvér?
+zákazník;2.1.27;kto vykonáva validáciu požiadaviek na softvér?
+konzistentnosť;2.1.28;ako zabezpečujeme konzistentnosť požiadaviek na softvér?
+jednoznačnosť;2.1.29;ako zabezpečujeme jednoznačnosť požiadaviek na softvér?
+špecifikácia požiadaviek;2.1.30;uveďte problémy vznikajúce pri špecifikácii požiadaviek na softvér.
+modelovanie požiadaviek;2.1.30;uveďte problémy vznikajúce pri špecifikácii požiadaviek na softvér.
 akceptačné testovanie;2.1.31;aká činnosť je, z hľadiska testovania, neoddeliteľnou časťou tvorby požiadaviek na softvér?
-Funkcionálny test;2.1.32;vysvetlite, prečo je dobré vytvárať funkcionálne testovacie scenáre počas špecifikácie. má to aj nejaké nevýhody?
-Návrh;2.2.1;aké činnosti vykonávame v etape návrhu v softvérovom projekte?
-Návrh;2.2.2;Čo je výstupom etapy návrhu v softvérovom projekte (aké artefakty)?
-Návrh;2.2.3;Čo musí obsahovať každý návrh softvéru (aké dva kľúčové výstupy)?
-Architektúra;2.2.4;Čo je to architektúra softvéru? Čo ju tvorí?
-Architektúra;2.2.5;na čo nám slúži architektonický návrh softvéru (prečo ho vytvárame)?
-Súdržnosť;2.2.6;Čo je to súdržnosť softvérovej súčiastky a o čo sa v súvislosti s ňou snažíme pri dobrom návrhu? 
-Zviazanosť;2.2.7;Čo je to zviazanosť softvérových súčiastok a o čo sa v súvislosti s ňou snažíme pri dobrom návrhu?
-Dekompozícia;2.2.8;prečo je v návrhu softvéru dôležitá dekompozícia?
-Dekompozícia;2.2.9;ak je v súčte lacnejšie vytvorenie softvéru po menších súčiastkach (oproti vývoju monolitu), prečo nemôžeme donekonečna znižovať veľkosť súčiastok? 
-zviazanosť;2.2.9;ak je v súčte lacnejšie vytvorenie softvéru po menších súčiastkach (oproti vývoju monolitu), prečo nemôžeme donekonečna znižovať veľkosť súčiastok? 
-Dekompozícia;2.2.10;aké   druhy dekompozície softvéru v návrhu poznáte? vysvetlite, čo znamenajú.
-Dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
-Dekompozícia;2.2.12;prečo pri tvorbe jedného softvéru spravidla potrebujeme uplatniť viaceré druhy dekompozície?
-Návrhový vzor;2.2.13;Čo je to návrhový vzor?
-Architektonický štýl;2.2.14;Čo je to architektonický štýl?
-Návrhový vzor;2.2.15; aký je rozdiel medzi architektonickým štýlom a návrhovým vzorom?
+funkcionálne testovanie;2.1.32;vysvetlite, prečo je dobré vytvárať funkcionálne testovacie scenáre počas špecifikácie. má to aj nejaké nevýhody?
+návrh softvéru;2.2.1;aké činnosti vykonávame v etape návrhu v softvérovom projekte?
+model softvéru;2.2.2;Čo je výstupom etapy návrhu v softvérovom projekte (aké artefakty)?
+model údajov;2.2.2;Čo je výstupom etapy návrhu v softvérovom projekte (aké artefakty)?
+model tried;2.2.2;Čo je výstupom etapy návrhu v softvérovom projekte (aké artefakty)?
+návrh používateľského rozhrania;2.2.2;Čo je výstupom etapy návrhu v softvérovom projekte (aké artefakty)?
+architektúra softvéru;2.2.2;Čo je výstupom etapy návrhu v softvérovom projekte (aké artefakty)?
+návrh komponentov;2.2.3;Čo musí obsahovať každý návrh softvéru (aké dva kľúčové výstupy)?
+architektonický návrh;2.2.3;Čo musí obsahovať každý návrh softvéru (aké dva kľúčové výstupy)?
+architektúra softvéru;2.2.4;Čo je to architektúra softvéru? Čo ju tvorí?
+architektonický návrh;2.2.5;na čo nám slúži architektonický návrh softvéru (prečo ho vytvárame)?
+súdržnosť;2.2.6;Čo je to súdržnosť softvérovej súčiastky a o čo sa v súvislosti s ňou snažíme pri dobrom návrhu? 
+zviazanosť;2.2.7;Čo je to zviazanosť softvérových súčiastok a o čo sa v súvislosti s ňou snažíme pri dobrom návrhu?
+dekompozícia;2.2.8;prečo je v návrhu softvéru dôležitá dekompozícia?
+dekompozícia;2.2.9;ak je v súčte lacnejšie vytvorenie softvéru po menších súčiastkach (oproti vývoju monolitu), prečo nemôžeme donekonečna znižovať veľkosť súčiastok? 
+dekompozícia;2.2.10;aké   druhy dekompozície softvéru v návrhu poznáte? vysvetlite, čo znamenajú.
+funkcionálna dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
+udalostná dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
+dekompozícia;2.2.12;prečo pri tvorbe jedného softvéru spravidla potrebujeme uplatniť viaceré druhy dekompozície?
+návrhový vzor;2.2.13;Čo je to návrhový vzor?
+architektonický štýl;2.2.14;Čo je to architektonický štýl?
+návrhový vzor;2.2.15; aký je rozdiel medzi architektonickým štýlom a návrhovým vzorom?
 architektonický štýl;2.2.15; aký je rozdiel medzi architektonickým štýlom a návrhovým vzorom?
-Architektonický štýl;2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
-Model view controller;2.2.17;uveďte príklad alebo typ aplikácie, pri ktorej nie je vhodné používať architektonický štýl mvc (neuvažujte triviálne príklady a la kalkulačka, kde to nemá zmysel z dôvodu jednoduchosti).
-Model view controller;2.2.18;akú funkciu v mvc má model? Čo ho tvorí?
-Model view controller;2.2.19;akú funkciu v mvc má view?
-Model view controller;2.2.20;akú funkciu v mvc má controller?
-Tučný klient;2.2.21;vysvetlite pojmy tučný a tenký klient.
+architektonický štýl;2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
+klient-server;2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
+model-view-controller (MVC);2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
+dátovody a filtre;2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
+službovo-orientovaná architektúra (SOA);2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
+tabuľa;2.2.16;aké architektonické štýly poznáme? stručne ich opíšte.
+model-view-controller (MVC);2.2.17;uveďte príklad alebo typ aplikácie, pri ktorej nie je vhodné používať architektonický štýl mvc (neuvažujte triviálne príklady a la kalkulačka, kde to nemá zmysel z dôvodu jednoduchosti).
+model-view-controller (MVC);2.2.18;akú funkciu v mvc má model? Čo ho tvorí?
+model-view-controller (MVC);2.2.19;akú funkciu v mvc má view?
+model-view-controller (MVC);2.2.20;akú funkciu v mvc má controller?
+klient-server;2.2.21;vysvetlite pojmy tučný a tenký klient.
+tučný klient;2.2.21;vysvetlite pojmy tučný a tenký klient.
 tenký klient;2.2.21;vysvetlite pojmy tučný a tenký klient.
-Tučný klient;2.2.22;má pri webových aplikáciách zmysel hovoriť o tučnom klientovi?
+tučný klient;2.2.22;má pri webových aplikáciách zmysel hovoriť o tučnom klientovi?
 tenký klient;2.2.22;má pri webových aplikáciách zmysel hovoriť o tučnom klientovi?
-Tučný klient;2.2.23;aké sú výhody a nevýhody použitia tučného a tenkého klienta? ako je to špecificky v prípade webových aplikácií?
+tučný klient;2.2.23;aké sú výhody a nevýhody použitia tučného a tenkého klienta? ako je to špecificky v prípade webových aplikácií?
 tenký klient;2.2.23;aké sú výhody a nevýhody použitia tučného a tenkého klienta? ako je to špecificky v prípade webových aplikácií?
-Web;2.2.24;aké výhody majú webové aplikácie oproti desktopovým aplikáciám?
-webové aplikácie;2.2.24;aké výhody majú webové aplikácie oproti desktopovým aplikáciám?
-Softvérová knižnica;2.2.25;aký je rozdiel medzi softvérovou knižnicou (library) a softvérovým rámcom (framework)?
+webová aplikácia;2.2.24;aké výhody majú webové aplikácie oproti desktopovým aplikáciám?
+softvérová knižnica;2.2.25;aký je rozdiel medzi softvérovou knižnicou (library) a softvérovým rámcom (framework)?
 softvérový rámec;2.2.25;aký je rozdiel medzi softvérovou knižnicou (library) a softvérovým rámcom (framework)?
-Prípad použitia;2.2.26;prečo triedy vo vytváranom systéme viažeme na prípady použitia?
-Návrh;2.2.27;aké sú charakteristiky dobrého návrhu softvéru (na mysli máme výstupy, nie samotnú etapu)?
-Implementácia;2.3.1;aké činnosti vykonávame v etape implementácie softvéru?
-Implementácia;2.3.2;Čo je výstupom etapy implementácie softvéru?
-Programovací jazyk;2.3.3;prečo na vytvorenie softvérového systému potrebujeme spravidla viac softvérových (programovacích) jazykov?
-Programovací jazyk;2.3.4;Čo by sme pri výbere programovacích jazykov pre projekt mali zvažovať?
-Verzie zdrojového kódu;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version control , ale aj  revision control  ,   source control )?
-Verzie zdrojového kódu;2.3.6;prečo uchovávame zdrojový kód v nástrojoch na správu verzií zdrojových kódov?
-Verzie zdrojového kódu;2.3.7;aké dva druhy nástrojov na správu verzií zdrojových kódov poznáme z hľadiska umiestnenia úložiska  ?
-Verzie zdrojového kódu;2.3.8;aké spôsoby na zabezpečenie toho, aby zmeny jednej časti zdrojového kódu dvoma programátormi neboli v konflikte, poznáme v nástrojoch na správu verzií zdrojových kódov?
-Verzie zdrojového kódu;2.3.9;Čo je to „commit“   (v súvislosti s nástrojmi na správu verzií zdrojových kódov)?
-commit;2.3.9;Čo je to „commit“   (v súvislosti s nástrojmi na správu verzií zdrojových kódov)?
-Verzie zdrojového kódu;2.3.10;nástroje na správu verzií   zdrojových kódov sa často používajú nesprávne. aké chyby či nedbalosti sa v praxi často vyskytujú?
-commit;2.3.10;nástroje na správu verzií   zdrojových kódov sa často používajú nesprávne. aké chyby či nedbalosti sa v praxi často vyskytujú?
-Testovanie;2.4.1;prečo softvér testujeme?
-Testovanie;2.4.2;uveďte hľadiská, podľa ktorých delíme techniky testovania softvéru.
-hľadiská testovania;2.4.2;uveďte hľadiská, podľa ktorých delíme techniky testovania softvéru.
-Testovanie;2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
-vlastnosti;2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
-Statické testovanie;2.4.4;porovnajte statické a dynamické testovanie softvéru.
+znovupoužiteľný softvér;2.2.25;aký je rozdiel medzi softvérovou knižnicou (library) a softvérovým rámcom (framework)?
+model tried;2.2.26;prečo triedy vo vytváranom systéme viažeme na prípady použitia?
+prípad použitia;2.2.26;prečo triedy vo vytváranom systéme viažeme na prípady použitia?
+návrh softvéru;2.2.27;aké sú charakteristiky dobrého návrhu softvéru (na mysli máme výstupy, nie samotnú etapu)?
+implementácia softvéru;2.3.1;aké činnosti vykonávame v etape implementácie softvéru?
+implementácia softvéru;2.3.2;Čo je výstupom etapy implementácie softvéru?
+zdrojový kód;2.3.2;Čo je výstupom etapy implementácie softvéru?
+dokumentácia;2.3.2;Čo je výstupom etapy implementácie softvéru?
+test;2.3.2;Čo je výstupom etapy implementácie softvéru?
+programovací jazyk;2.3.3;prečo na vytvorenie softvérového systému potrebujeme spravidla viac softvérových (programovacích) jazykov?
+programovací jazyk;2.3.4;Čo by sme pri výbere programovacích jazykov pre projekt mali zvažovať?
+správa verzií zdrojového kódu;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version     control , ale aj  revision     control  ,   source     control )?
+nástroj na správu verzií;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version     control , ale aj  revision     control  ,   source     control )?
+správa verzií zdrojového kódu;2.3.6;prečo uchovávame zdrojový kód v nástrojoch na správu verzií zdrojových kódov?
+nástroj na správu verzií;2.3.6;prečo uchovávame zdrojový kód v nástrojoch na správu verzií zdrojových kódov?
+správa verzií zdrojového kódu;2.3.7;aké dva druhy nástrojov na správu verzií zdrojových kódov poznáme z hľadiska umiestnenia úložiska  ?
+centralizovaná správa verzií;2.3.7;aké dva druhy nástrojov na správu verzií zdrojových kódov poznáme z hľadiska umiestnenia úložiska  ?
+decentralizovaná správa verzií;2.3.7;aké dva druhy nástrojov na správu verzií zdrojových kódov poznáme z hľadiska umiestnenia úložiska  ?
+správa verzií zdrojového kódu;2.3.8;aké spôsoby na zabezpečenie toho, aby zmeny jednej časti zdrojového kódu dvoma programátormi neboli v konflikte, poznáme v nástrojoch na správu verzií zdrojových kódov?
+odovzdanie kódu (commit);2.3.9;Čo je to „commit“   (v súvislosti s nástrojmi na správu verzií zdrojových kódov)?
+správa verzií zdrojového kódu;2.3.10;nástroje na správu verzií   zdrojových kódov sa často používajú nesprávne. aké chyby či nedbalosti sa v praxi často vyskytujú?
+testovanie softvéru (v širšom zmysle);2.4.1;prečo softvér testujeme?
+hľadisko testovania;2.4.2;uveďte hľadiská, podľa ktorých delíme techniky testovania softvéru.
+testovanie softvéru (v širšom zmysle);2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
+spoľahlivosť;2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
+robustnosť;2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
+efektívnosť;2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
+správnosť;2.4.3;ktoré vlastnosti softvéru sa zvyknú najviac testovať?
+statické testovanie;2.4.4;porovnajte statické a dynamické testovanie softvéru.
 dynamické testovanie;2.4.4;porovnajte statické a dynamické testovanie softvéru.
-Statické testovanie;2.4.5;v ktorých etapách životného cyklu softvéru používame statické testovanie? 
-Statické testovanie;2.4.6;je pravdivé tvrdenie: „statické testovanie sa používa najmä pri integrácii softvérového systému“?
-Statické testovanie;2.4.7;je pravdivé tvrdenie: „statické testovanie sa používa iba pri analýze a návrhu“?
-Automatizované testovanie;2.4.8;je pravdivé tvrdenie: „automatizované testovanie môžeme realizovať vo všetkých etapách životného cyklu softvéru“?
-Automatizované testovanie;2.4.9;uveďte   príklad nefunkcionálnej požiadavky na softvér, ktorú možno testovať automatizovaným testom.
+statické testovanie;2.4.5;v ktorých etapách životného cyklu softvéru používame statické testovanie? 
+statické testovanie;2.4.6;je pravdivé tvrdenie: „statické testovanie sa používa najmä pri integrácii softvérového systému“?
+statické testovanie;2.4.7;je pravdivé tvrdenie: „statické testovanie sa používa iba pri analýze a návrhu“?
+automatizované testovanie;2.4.8;je pravdivé tvrdenie: „automatizované testovanie môžeme realizovať vo všetkých etapách životného cyklu softvéru“?
+automatizované testovanie;2.4.9;uveďte   príklad nefunkcionálnej požiadavky na softvér, ktorú možno testovať automatizovaným testom.
 nefunkcionálna požiadavka;2.4.9;uveďte   príklad nefunkcionálnej požiadavky na softvér, ktorú možno testovať automatizovaným testom.
-Testovanie;2.4.10;Čo v testovaní softvéru znamená pojem „fixture“?
-Automatické testovanie;2.4.11;ako sa dosahuje nezávislosť vykonávania jednotlivých automatických testov?
-Automatické testovanie;2.4.12;máme hotový softvér a tiež množinu testov, ktoré ho automaticky testujú, pričom všetky testy skončili úspešne. ako môžeme dodatočne preveriť, či sú testy skutočne vytvorené správne?
+východisko testovania (fixture);2.4.10;Čo v testovaní softvéru znamená pojem „fixture“?
+automatizované testovanie;2.4.11;ako sa dosahuje nezávislosť vykonávania jednotlivých automatických testov?
 mutačné testovanie;2.4.12;máme hotový softvér a tiež množinu testov, ktoré ho automaticky testujú, pričom všetky testy skončili úspešne. ako môžeme dodatočne preveriť, či sú testy skutočne vytvorené správne?
-Verifikácia;2.4.13;vysvetlite, v čom spočíva porovnávacia metóda verifikácie softvéru.
-validácia;2.4.13;vysvetlite, v čom spočíva porovnávacia metóda verifikácie softvéru.
-Testovanie;2.4.14;aký je rozdiel medzi technikami testovania čierna skrinka (angl. black-box) a biela skrinka (angl. white-box)?
-čierna skrinka;2.4.14;aký je rozdiel medzi technikami testovania čierna skrinka (angl. black-box) a biela skrinka (angl. white-box)?
-biela skrinka;2.4.14;aký je rozdiel medzi technikami testovania čierna skrinka (angl. black-box) a biela skrinka (angl. white-box)?
-Testovanie;2.4.15;vysvetlite pojem „triedy ekvivalencie“ (v súvislosti s testovaním softvéru).
-triedy ekvivalencie;2.4.15;vysvetlite pojem „triedy ekvivalencie“ (v súvislosti s testovaním softvéru).
-Testovanie;2.4.16;je pravdivé tvrdenie: „pri určovaní testovacích vstupov technikou biela skrinka sa vychádza z rozdelenia vstupov/výstupov programu do tried ekvivalencie“?
-triedy ekvivalencie;2.4.16;je pravdivé tvrdenie: „pri určovaní testovacích vstupov technikou biela skrinka sa vychádza z rozdelenia vstupov/výstupov programu do tried ekvivalencie“?
-čierna skrinka;2.4.16;je pravdivé tvrdenie: „pri určovaní testovacích vstupov technikou biela skrinka sa vychádza z rozdelenia vstupov/výstupov programu do tried ekvivalencie“?
-biela skrinka;2.4.16;je pravdivé tvrdenie: „pri určovaní testovacích vstupov technikou biela skrinka sa vychádza z rozdelenia vstupov/výstupov programu do tried ekvivalencie“?
-Testovanie;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
-biela skrinka;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
-čierna skrinka;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
-Testovanie;2.4.18;ako funguje testovanie technikou sivej skrinky?
-biela skrinka;2.4.18;ako funguje testovanie technikou sivej skrinky?
-čierna skrinka;2.4.18;ako funguje testovanie technikou sivej skrinky?
-TDD;2.4.19;vysvetlite pojem vývoj riadený testami (angl.  test driven development , tdd).
-TDD;2.4.20;pri vývoji riadenom testami (angl.  test driven development ) sa používa technika testovania biela alebo čierna skrinka? zdôvodnite.
-čierna skrinka;2.4.20;pri vývoji riadenom testami (angl.  test driven development ) sa používa technika testovania biela alebo čierna skrinka? zdôvodnite.
-Akceptačné testovanie;2.4.21;Čo je to akceptačné testovanie?
-Akceptačné testovanie;2.4.22;kto vykonáva akceptačné testovanie?
-Akceptačné testovanie;2.4.23;kedy (v ktorej etape vývoja softvéru) sa navrhujú akceptačné testy?
-životný cyklus softvéru;2.4.23;kedy (v ktorej etape vývoja softvéru) sa navrhujú akceptačné testy?
-Akceptačné testovanie;2.4.24;kedy sa v životnom cykle realizuje akceptačné testovanie (kedy sa testy vykonávajú)?
-životný cyklus softvéru;2.4.24;kedy sa v životnom cykle realizuje akceptačné testovanie (kedy sa testy vykonávajú)?
-Alfa testovanie;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
-Beta testovanie;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
-Použiteľnosť;2.4.26;aký typ testov sa používa pri testovaní použiteľnosti softvéru?
-testovanie;2.4.26;aký typ testov sa používa pri testovaní použiteľnosti softvéru?
-Jednotkový test;2.4.27;Čo je to jednotkové testovanie (angl.  unit testing )?
-Jednotkový test;2.4.28;kto spravidla vykonáva jednotkové testovanie?
-Integračné testovanie;2.4.29;Čo je to integračné testovanie?
-Integračné testovanie;2.4.30;uvažujte nasledujúce: „integračné testy by sme mohli pripraviť tak, aby pokrývali celú funkcionalitu príslušného komponentu a ušetrili by sme tak veľa práce s tvorbou (a~udržiavaním) jednotkových testov v rámci komponentu. pre otestovanie komponentu by sme vždy spustili integračné testy a ak sme v poslednej iterácii niečo spravili zle, ukáže sa to.“ prečo teda nepoužívame iba integračné testovanie, ale aj jednotkové testovanie?
+automatizované testovanie;2.4.12;máme hotový softvér a tiež množinu testov, ktoré ho automaticky testujú, pričom všetky testy skončili úspešne. ako môžeme dodatočne preveriť, či sú testy skutočne vytvorené správne?
+verifikácia softvéru;2.4.13;vysvetlite, v čom spočíva porovnávacia metóda verifikácie softvéru.
+testovanie čierna skrinka;2.4.14;aký je rozdiel medzi technikami testovania čierna skrinka (angl. black-box) a biela skrinka (angl. white-box)?
+testovanie biela skrinka;2.4.14;aký je rozdiel medzi technikami testovania čierna skrinka (angl. black-box) a biela skrinka (angl. white-box)?
+trieda ekvivalencie;2.4.15;vysvetlite pojem „triedy ekvivalencie“ (v súvislosti s testovaním softvéru).
+trieda ekvivalencie;2.4.16;je pravdivé tvrdenie: „pri určovaní testovacích vstupov technikou biela skrinka sa vychádza z rozdelenia vstupov/výstupov programu do tried ekvivalencie“?
+testovanie biela skrinka;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
+testovanie čierna skrinka;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
+testovanie sivá skrinka;2.4.18;ako funguje testovanie technikou sivej skrinky?
+testami riadený vývoj (TDD);2.4.19;vysvetlite pojem vývoj riadený testami (angl.  test   driven     development , tdd).
+testami riadený vývoj (TDD);2.4.20;pri vývoji riadenom testami (angl.  test   driven     development ) sa používa technika testovania biela alebo čierna skrinka? zdôvodnite.
+akceptačné testovanie;2.4.21;Čo je to akceptačné testovanie?
+akceptačné testovanie;2.4.22;kto vykonáva akceptačné testovanie?
+zákazník;2.4.22;kto vykonáva akceptačné testovanie?
+akceptačné testovanie;2.4.23;kedy (v ktorej etape vývoja softvéru) sa navrhujú akceptačné testy?
+akceptačné testovanie;2.4.24;kedy sa v životnom cykle realizuje akceptačné testovanie (kedy sa testy vykonávajú)?
+alfa testovanie;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
+beta testovanie;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
+vývojár;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
+zákazník;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
+testovanie použiteľnosti;2.4.26;aký typ testov sa používa pri testovaní použiteľnosti softvéru?
+jednotkové testovanie;2.4.27;Čo je to jednotkové testovanie (angl.  unit     testing )?
+jednotkové testovanie;2.4.28;kto spravidla vykonáva jednotkové testovanie?
+vývojár;2.4.28;kto spravidla vykonáva jednotkové testovanie?
+integračné testovanie;2.4.29;Čo je to integračné testovanie?
+integračné testovanie;2.4.30;uvažujte nasledujúce: „integračné testy by sme mohli pripraviť tak, aby pokrývali celú funkcionalitu príslušného komponentu a ušetrili by sme tak veľa práce s tvorbou (a~udržiavaním) jednotkových testov v rámci komponentu. pre otestovanie komponentu by sme vždy spustili integračné testy a ak sme v poslednej iterácii niečo spravili zle, ukáže sa to.“ prečo teda nepoužívame iba integračné testovanie, ale aj jednotkové testovanie?
 jednotkové testovanie;2.4.30;uvažujte nasledujúce: „integračné testy by sme mohli pripraviť tak, aby pokrývali celú funkcionalitu príslušného komponentu a ušetrili by sme tak veľa práce s tvorbou (a~udržiavaním) jednotkových testov v rámci komponentu. pre otestovanie komponentu by sme vždy spustili integračné testy a ak sme v poslednej iterácii niečo spravili zle, ukáže sa to.“ prečo teda nepoužívame iba integračné testovanie, ale aj jednotkové testovanie?
-Jednotkový test;2.4.31;ako by sme mali postupovať pri tvorení jednotkových testov pri zložených metódach (metódach, ktoré volajú iné metódy)?
-Mutačné testovanie;2.4.32;ktorý typ testovania by sme mohli považovať za testovanie testov?
-Testovanie;2.4.33;uvažujme dve hľadiská prístupov k testovaniu: manuálne-automatizované a dynamické-statické. uveďte príklad testovania pre každú kombináciu hodnôt z týchto dvoch dimenzií?
-hľadiská testovania;2.4.33;uvažujme dve hľadiská prístupov k testovaniu: manuálne-automatizované a dynamické-statické. uveďte príklad testovania pre každú kombináciu hodnôt z týchto dvoch dimenzií?
-Prevádzka;2.5.1;Čo je to prevádzka softvéru?
-Prevádzka;2.5.2;aké činnosti sú typicky spojené s prevádzkou softvéru (okrem samotného používania softvéru)?
-Údržba;2.5.3;Čo je to údržba softvéru?
-Prevádzka;2.5.4;aký je rozdiel medzi prevádzkou a údržbou softvéru?
-údržba;2.5.4;aký je rozdiel medzi prevádzkou a údržbou softvéru?
-Údržba;2.5.5;aké typy údržby softvéru poznáme?
-Údržba;2.5.6;načo je užitočné rozlišovať medzi viacerými typmi údržby?
-Údržba;2.5.7;ktorý typ údržby je v praxi najrozšírenejší?
-Údržba;2.5.8;prečo je údržba softvéru dôležitá? (prečo je dôležité sa ňou zaoberať? líšia sa aktivity počas údržby od typického vývoja softvéru?)
-Vývoj softvéru;2.5.9;aký je pomer nákladov na vývoj a na údržbu softvérového systému?
-Údržba softvéru;2.5.9;aký je pomer nákladov na vývoj a na údržbu softvérového systému?
-Legacy;2.5.10;Čo je to tzv. zanechaný   systém (angl.  legacy system )?
-údržba;2.5.10;Čo je to tzv. zanechaný   systém (angl.  legacy system )?
-Legacy;2.5.11;prečo majú tzv. zanechané systémy slabú udržiavateľnosť?
-údržba;2.5.11;prečo majú tzv. zanechané systémy slabú udržiavateľnosť?
-údržba;2.5.12;aké základné techniky údržby softvéru poznáte?
+jednotkové testovanie;2.4.31;ako by sme mali postupovať pri tvorení jednotkových testov pri zložených metódach (metódach, ktoré volajú iné metódy)?
+mutačné testovanie;2.4.32;ktorý typ testovania by sme mohli považovať za testovanie testov?
+statické testovanie;2.4.33;uvažujme dve hľadiská prístupov k testovaniu: manuálne-automatizované a dynamické-statické. uveďte príklad testovania pre každú kombináciu hodnôt z týchto dvoch dimenzií?
+dynamické testovanie;2.4.33;uvažujme dve hľadiská prístupov k testovaniu: manuálne-automatizované a dynamické-statické. uveďte príklad testovania pre každú kombináciu hodnôt z týchto dvoch dimenzií?
+manuálne testovanie;2.4.33;uvažujme dve hľadiská prístupov k testovaniu: manuálne-automatizované a dynamické-statické. uveďte príklad testovania pre každú kombináciu hodnôt z týchto dvoch dimenzií?
+automatizované testovanie;2.4.33;uvažujme dve hľadiská prístupov k testovaniu: manuálne-automatizované a dynamické-statické. uveďte príklad testovania pre každú kombináciu hodnôt z týchto dvoch dimenzií?
+prevádzka softvéru;2.5.1;Čo je to prevádzka softvéru?
+prevádzka softvéru;2.5.2;aké činnosti sú typicky spojené s prevádzkou softvéru (okrem samotného používania softvéru)?
+údržba softvéru;2.5.3;Čo je to údržba softvéru?
+prevádzka softvéru;2.5.4;aký je rozdiel medzi prevádzkou a údržbou softvéru?
+údržba softvéru;2.5.4;aký je rozdiel medzi prevádzkou a údržbou softvéru?
+údržba softvéru;2.5.5;aké typy údržby softvéru poznáme?
+korektívna údržba;2.5.5;aké typy údržby softvéru poznáme?
+adaptívna údržba;2.5.5;aké typy údržby softvéru poznáme?
+perfektívna údržba;2.5.5;aké typy údržby softvéru poznáme?
+preventívna údržba;2.5.5;aké typy údržby softvéru poznáme?
+údržba softvéru;2.5.6;načo je užitočné rozlišovať medzi viacerými typmi údržby?
+údržba softvéru;2.5.7;ktorý typ údržby je v praxi najrozšírenejší?
+perfektívna údržba;2.5.7;ktorý typ údržby je v praxi najrozšírenejší?
+údržba softvéru;2.5.8;prečo je údržba softvéru dôležitá? (prečo je dôležité sa ňou zaoberať? líšia sa aktivity počas údržby od typického vývoja softvéru?)
+údržba softvéru;2.5.9;aký je pomer nákladov na vývoj a na údržbu softvérového systému?
+vývoj softvéru;2.5.9;aký je pomer nákladov na vývoj a na údržbu softvérového systému?
+zanechaný systém (legacy system);2.5.10;Čo je to tzv. zanechaný   systém (angl.  legacy     system )?
+zanechaný systém (legacy system);2.5.11;prečo majú tzv. zanechané systémy slabú udržovateľnosť?
+údržba softvéru;2.5.12;aké základné techniky údržby softvéru poznáte?
 refaktoring;2.5.13;Čo je to refaktoring kódu?
-Údržba;2.5.14;Čo je to plánovanie údržby?
-Kultivované programovanie;2.5.15;Čo označuje pojem kultivované programovanie (angl.  literate programming ).
-model životného cyklu vývoja softvéru;3.0.1;vysvetlite, čo je to model životného cyklu vývoja softvéru.
-model životného cyklu softvéru;3.0.2;Čo hovoria modely životného cyklu vývoja softvéru o dĺžke trvania jednotlivých etáp?
-model životného cyklu softvéru;3.0.3;ktorý model životného cyklu vývoja softvéru považujeme za referenčný? 
-vodopádový model;3.0.3;ktorý model životného cyklu vývoja softvéru považujeme za referenčný? 
-iteratívno-inkrementálny model;3.0.3;ktorý model životného cyklu vývoja softvéru považujeme za referenčný? 
-model životného cyklu softvéru;3.0.4;z akých etáp pozostáva vodopádový model vývoja softvéru?
+plánovanie údržby;2.5.14;Čo je to plánovanie údržby?
+kultivované programovanie;2.5.15;Čo označuje pojem kultivované programovanie (angl.  literate     programming ).
+model vývoja softvéru;3.0.1;vysvetlite, čo je to model životného cyklu vývoja softvéru.
+sekvenčný model;3.0.1;vysvetlite, čo je to model životného cyklu vývoja softvéru.
+iteratívno-inkrementálny model;3.0.1;vysvetlite, čo je to model životného cyklu vývoja softvéru.
+model vývoja softvéru;3.0.2;Čo hovoria modely životného cyklu vývoja softvéru o dĺžke trvania jednotlivých etáp?
+model vývoja softvéru;3.0.3;ktorý model životného cyklu vývoja softvéru považujeme za referenčný? 
 vodopádový model;3.0.4;z akých etáp pozostáva vodopádový model vývoja softvéru?
-model životného cyklu softvéru;3.0.5;vysvetlite základný princíp vodopádového modelu vývoja softvéru.
 vodopádový model;3.0.5;vysvetlite základný princíp vodopádového modelu vývoja softvéru.
-model životného cyklu softvéru;3.0.6;aké sú výhody vodopádového modelu vývoja softvéru?
 vodopádový model;3.0.6;aké sú výhody vodopádového modelu vývoja softvéru?
-model životného cyklu softvéru;3.0.7;Čo je hlavná nevýhodá vodopádového modelu vývoja softvéru?
 vodopádový model;3.0.7;Čo je hlavná nevýhodá vodopádového modelu vývoja softvéru?
-model životného cyklu softvéru;3.0.8;vysvetlite princíp v-modelu životného cyklu softvéru.
 V-model;3.0.8;vysvetlite princíp v-modelu životného cyklu softvéru.
-model životného cyklu softvéru;3.0.9;aký druh testovania je vo v-modeli prepojený na fázu analýzy používateľských požiadaviek (a zároveň uzatvára životný cyklus softvéru)?
 V-model;3.0.9;aký druh testovania je vo v-modeli prepojený na fázu analýzy používateľských požiadaviek (a zároveň uzatvára životný cyklus softvéru)?
-model životného cyklu softvéru;3.0.10;v čom spočíva inkrementálny model vývoja softvéru? prečo/kedy sa používa?
 inkrementálny model;3.0.10;v čom spočíva inkrementálny model vývoja softvéru? prečo/kedy sa používa?
-model životného cyklu softvéru;3.0.11;porovnajte výhody a nevýhody inkrementálneho modelu vývoja softvéru (voči vodopádovému modelu).
 inkrementálny model;3.0.11;porovnajte výhody a nevýhody inkrementálneho modelu vývoja softvéru (voči vodopádovému modelu).
-model životného cyklu softvéru;3.0.12;uveďte príklady modelov životného cyklu softvéru založených na inkrementálnom modeli vývoja softvéru.
 inkrementálny model;3.0.12;uveďte príklady modelov životného cyklu softvéru založených na inkrementálnom modeli vývoja softvéru.
-model životného cyklu softvéru;3.0.13;aká je základná charakteristika iteratívneho modelu vývoja softvéru? prečo/kedy sa používa?
 iteratívny model;3.0.13;aká je základná charakteristika iteratívneho modelu vývoja softvéru? prečo/kedy sa používa?
-model životného cyklu softvéru;3.0.14;uveďte výhody a nevýhody iteratívneho modelu vývoja softvéru (v porovnaní voči vodopádovému modelu).
 iteratívny model;3.0.14;uveďte výhody a nevýhody iteratívneho modelu vývoja softvéru (v porovnaní voči vodopádovému modelu).
-model životného cyklu softvéru;3.0.15;aká je základná charakteristika evolučného modelu vývoja softvéru?
 evolučný model;3.0.15;aká je základná charakteristika evolučného modelu vývoja softvéru?
-model životného cyklu softvéru;3.0.16;v čom hlavnom sa špirálový model životného cyklu softvéru líši od ostatných modelov (vodopádového, iteratívno-inkrementálneho či evolučného modelu)?
 špirálový model;3.0.16;v čom hlavnom sa špirálový model životného cyklu softvéru líši od ostatných modelov (vodopádového, iteratívno-inkrementálneho či evolučného modelu)?
-model životného cyklu softvéru;3.0.17;porovnajte výhody a nevýhody špirálového modelu vývoja softvéru.
 špirálový model;3.0.17;porovnajte výhody a nevýhody špirálového modelu vývoja softvéru.
-model životného cyklu softvéru;3.0.18;Čo je najväčší prínos agilného modelu vývoja oproti všeobecnému iteratívno-inkrementálnemu modelu?
 agilný model;3.0.18;Čo je najväčší prínos agilného modelu vývoja oproti všeobecnému iteratívno-inkrementálnemu modelu?
-model životného cyklu softvéru;3.0.19;porovnajte výhody a nevýhody agilného modelu vývoja softvéru.
 agilný model;3.0.19;porovnajte výhody a nevýhody agilného modelu vývoja softvéru.
-model životného cyklu softvéru;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
 inkrementálny model;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
 iteratívny model;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
 agilný model;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
-model životného cyklu softvéru;3.0.21;akým modelom životného cyklu vývoja softvéru sa v súčasnosti v praxi vyvíja najviac? odpoveď stručne zdôvodnite.
-Model;4.0.1;Čo je to model?  
-Model softvéru;4.0.2;Čo je to model softvéru?
-Metóda tvorby softvéru;4.0.3;Čo je to metóda tvorby softvéru?
-Metóda tvorby softvéru;4.0.4;aké metódy tvorby   softvéru poznáte? 
-Model softvéru;4.0.5;aký je vzťah medzi modelom softvéru a metódou tvorby softvéru?
-Metóda tvorby softvéru;4.0.5;aký je vzťah medzi modelom softvéru a metódou tvorby softvéru?
-Metóda tvorby softvéru;4.0.6;aký je vzťah medzi metódami tvorby softvéru a modelmi životného cyklu vývoja softvéru.
-Model životného cyklu vývoja softvéru;4.0.6;aký je vzťah medzi metódami tvorby softvéru a modelmi životného cyklu vývoja softvéru.
-Model softvéru;4.1.1;prečo vytvárame modely softvéru?
-Model softvéru;4.1.2;v ktorých etapách životného cyklu vývoja softvéru vytvárame modely?
-Model softvéru;4.1.3;aká je základná charakteristika dobrého modelu softvéru?
-Model softvéru;4.1.4;aké sú základné princípy modelovania softvéru?
-Model softvéru;4.1.5;aké vlastnosti pri modeloch sledujeme? 
-Model softvéru;4.1.6;z akých základných výrazových prvkov modely pozostávajú?
+iteratívno-inkrementálny model;3.0.21;akým modelom životného cyklu vývoja softvéru sa v súčasnosti v praxi vyvíja najviac? odpoveď stručne zdôvodnite.
+model;4.0.1;Čo je to model?  
+model softvéru;4.0.2;Čo je to model softvéru?
+metóda tvorby softvéru;4.0.3;Čo je to metóda tvorby softvéru?
+metóda tvorby softvéru;4.0.4;aké metódy tvorby   softvéru poznáte? 
+heuristická metóda;4.0.4;aké metódy tvorby   softvéru poznáte? 
+formálna metóda;4.0.4;aké metódy tvorby   softvéru poznáte? 
+prototypovanie;4.0.4;aké metódy tvorby   softvéru poznáte? 
+agilná metóda;4.0.4;aké metódy tvorby   softvéru poznáte? 
+model softvéru;4.0.5;aký je vzťah medzi modelom softvéru a metódou tvorby softvéru?
+metóda tvorby softvéru;4.0.5;aký je vzťah medzi modelom softvéru a metódou tvorby softvéru?
+metóda tvorby softvéru;4.0.6;aký je vzťah medzi metódami tvorby softvéru a modelmi životného cyklu vývoja softvéru.
+model vývoja softvéru;4.0.6;aký je vzťah medzi metódami tvorby softvéru a modelmi životného cyklu vývoja softvéru.
+model softvéru;4.1.1;prečo vytvárame modely softvéru?
+model softvéru;4.1.2;v ktorých etapách životného cyklu vývoja softvéru vytvárame modely?
+modelovanie softvéru;4.1.2;v ktorých etapách životného cyklu vývoja softvéru vytvárame modely?
+model softvéru;4.1.3;aká je základná charakteristika dobrého modelu softvéru?
+modelovanie softvéru;4.1.4;aké sú základné princípy modelovania softvéru?
+vlastnosť modelu;4.1.5;aké vlastnosti pri modeloch sledujeme? 
+úplnosť;4.1.5;aké vlastnosti pri modeloch sledujeme? 
+konzistentnosť;4.1.5;aké vlastnosti pri modeloch sledujeme? 
+správnosť;4.1.5;aké vlastnosti pri modeloch sledujeme? 
+prvok modelu;4.1.6;z akých základných výrazových prvkov modely pozostávajú?
+entita;4.1.6;z akých základných výrazových prvkov modely pozostávajú?
+vzťah;4.1.6;z akých základných výrazových prvkov modely pozostávajú?
 diagram;4.1.6;z akých základných výrazových prvkov modely pozostávajú?
-Model softvéru;4.1.7;aký je rozdiel medzi modelom a diagramom?
+model softvéru;4.1.7;aký je rozdiel medzi modelom a diagramom?
 diagram;4.1.7;aký je rozdiel medzi modelom a diagramom?
-Model softvéru;4.1.8;uveďte (vymyslite) príklad softvéru, ktorý je modelom.
-Model softvéru;4.1.9;aké základné typy   modelov softvéru poznáte?
-Model softvéru;4.1.10;aké jazyky na modelovanie softvéru poznáte?
-Model softvéru;4.1.11;ktoré typické modely softvéru poznáte (čo pri softvéri typicky modelujeme)?
-Dimenzie modelov;4.1.12;uveďte hľadiská (dimenzie, aspekty), podľa ktorých delíme/nazeráme na modely softvéru.
-Model softvéru;4.1.13;Čo rozhoduje o rozsahu modelovania v softvérovom projekte?
-Model softvéru;4.1.14;Čo rozhoduje o tom, aké modely v softvérovom projekte použijeme?
-Zdrojový kód;4.1.15;je zdrojový kód modelom softvéru?
-Agilné modelovanie;4.1.16;Čo je to agilné modelovanie?
-Metóda tvorby softvéru;4.2.1;aké spôsoby vývoja softvéru poznáme z pohľadu toho, na čo sa kladie pri modelovaní dôraz? (čím pri modelovaní začíname?)
-funkcionálna metóda;4.2.1;aké spôsoby vývoja softvéru poznáme z pohľadu toho, na čo sa kladie pri modelovaní dôraz? (čím pri modelovaní začíname?)
-dátovo-orientovaná metóda;4.2.1;aké spôsoby vývoja softvéru poznáme z pohľadu toho, na čo sa kladie pri modelovaní dôraz? (čím pri modelovaní začíname?)
-objektovo-orientovaný;4.2.1;aké spôsoby vývoja softvéru poznáme z pohľadu toho, na čo sa kladie pri modelovaní dôraz? (čím pri modelovaní začíname?)
-Metóda tvorby softvéru;4.2.2;kedy je lepšie dať prednosť funkcionálnemu a kedy dátovo-orientovanému prístupu k modelovaniu a vývoju softvéru?
-funkcionálna metóda;4.2.2;kedy je lepšie dať prednosť funkcionálnemu a kedy dátovo-orientovanému prístupu k modelovaniu a vývoju softvéru?
-dátovo-orientovaná metóda;4.2.2;kedy je lepšie dať prednosť funkcionálnemu a kedy dátovo-orientovanému prístupu k modelovaniu a vývoju softvéru?
-Programovanie;4.2.3;Čo je to paradigma programovania?
+model softvéru;4.1.8;uveďte (vymyslite) príklad softvéru, ktorý je modelom.
+model softvéru;4.1.9;aké základné typy   modelov softvéru poznáte?
+informačný model;4.1.9;aké základné typy   modelov softvéru poznáte?
+model správania;4.1.9;aké základné typy   modelov softvéru poznáte?
+štrukturálny model;4.1.9;aké základné typy   modelov softvéru poznáte?
+modelovací jazyk;4.1.10;aké jazyky na modelovanie softvéru poznáte?
+model softvéru;4.1.11;ktoré typické modely softvéru poznáte (čo pri softvéri typicky modelujeme)?
+hľadisko modelovania;4.1.12;uveďte hľadiská (dimenzie, aspekty), podľa ktorých delíme/nazeráme na modely softvéru.
+modelovanie softvéru;4.1.13;Čo rozhoduje o rozsahu modelovania v softvérovom projekte?
+model softvéru;4.1.14;Čo rozhoduje o tom, aké modely v softvérovom projekte použijeme?
+model softvéru;4.1.15;je zdrojový kód modelom softvéru?
+agilné modelovanie;4.1.16;Čo je to agilné modelovanie?
+modelovanie softvéru;4.2.1;aké spôsoby vývoja softvéru poznáme z pohľadu toho, na čo sa kladie pri modelovaní dôraz? (čím pri modelovaní začíname?)
+funkcionálny prístup;4.2.2;kedy je lepšie dať prednosť funkcionálnemu a kedy dátovo-orientovanému prístupu k modelovaniu a vývoju softvéru?
+dátovo-orientovaný prístup;4.2.2;kedy je lepšie dať prednosť funkcionálnemu a kedy dátovo-orientovanému prístupu k modelovaniu a vývoju softvéru?
 paradigma programovania;4.2.3;Čo je to paradigma programovania?
-Programovanie;4.2.4;aké paradigmy programovania poznáte?
 paradigma programovania;4.2.4;aké paradigmy programovania poznáte?
-Komponent;4.2.5;aká je základná charakteristika komponentového prístupu k vývoju softvéru? prečo je výhodné ho použiť?
-Zhora-nadol;4.2.6;vysvetlite pojem „návrh zhora-nadol“. kedy volíme túto stratégiu?
-Zdola-nahor;4.2.7;vysvetlite pojem „návrh zdola-nahor“. kedy volíme túto stratégiu?
-Prototyp;4.2.8;Čo je to prototyp?
-Prototyp;4.2.9;prečo je prototypovanie dôležité pre softvérové inžinierstvo?
-Prototyp;4.2.10;uveďte príklad prototypu softvéru, ktorý netreba programovať.
-Prototyp;4.2.11;aké dva druhy prototypovania poznáme? stručne uveďte, v čom sa líšia.
-prototyp na zahodenie;4.2.11;aké dva druhy prototypovania poznáme? stručne uveďte, v čom sa líšia.
-evolučný prototyp;4.2.11;aké dva druhy prototypovania poznáme? stručne uveďte, v čom sa líšia.
-Prototyp;4.2.12;kedy volíme prototypovanie na zahodenie a kedy radšej evolučné prototypovanie?
-prototyp na zahodenie;4.2.12;kedy volíme prototypovanie na zahodenie a kedy radšej evolučné prototypovanie?
-evolučný prototyp;4.2.12;kedy volíme prototypovanie na zahodenie a kedy radšej evolučné prototypovanie?
-Hodnovernosť;4.2.13;Čo je to hodnovernosť (angl.  fidelity ) ako vlastnosť softvéru (resp. jeho časti)?
-prototyp;4.2.13;Čo je to hodnovernosť (angl.  fidelity ) ako vlastnosť softvéru (resp. jeho časti)?
-Prípad použitia;4.2.14;vysvetlite, čo znamená, že proces tvorby softvéru je vedený prípadmi použitia.
-prípadmi použitia vedený vývoj softvéru;4.2.14;vysvetlite, čo znamená, že proces tvorby softvéru je vedený prípadmi použitia.
+imperatívne programovanie;4.2.4;aké paradigmy programovania poznáte?
+deklaratívne programovanie;4.2.4;aké paradigmy programovania poznáte?
+prístup k modelovaniu;4.2.5;aká je základná charakteristika komponentového prístupu k vývoju softvéru? prečo je výhodné ho použiť?
+komponentový prístup;4.2.5;aká je základná charakteristika komponentového prístupu k vývoju softvéru? prečo je výhodné ho použiť?
+návrh zhora-nadol;4.2.6;vysvetlite pojem „návrh zhora-nadol“. kedy volíme túto stratégiu?
+návrh zdola-nahor;4.2.7;vysvetlite pojem „návrh zdola-nahor“. kedy volíme túto stratégiu?
+prototyp;4.2.8;Čo je to prototyp?
+prototyp;4.2.9;prečo je prototypovanie dôležité pre softvérové inžinierstvo?
+prototypovanie;4.2.9;prečo je prototypovanie dôležité pre softvérové inžinierstvo?
+papierový prototyp;4.2.10;uveďte príklad prototypu softvéru, ktorý netreba programovať.
+prototypovanie na zahodenie;4.2.11;aké dva druhy prototypovania poznáme? stručne uveďte, v čom sa líšia.
+evolučné prototypovanie;4.2.11;aké dva druhy prototypovania poznáme? stručne uveďte, v čom sa líšia.
+prototypovanie na zahodenie;4.2.12;kedy volíme prototypovanie na zahodenie a kedy radšej evolučné prototypovanie?
+evolučné prototypovanie;4.2.12;kedy volíme prototypovanie na zahodenie a kedy radšej evolučné prototypovanie?
+hodnovernosť;4.2.13;Čo je to hodnovernosť (angl.  fidelity ) ako vlastnosť softvéru (resp. jeho časti)?
+prípadmi použitia riadený vývoj (UCDD);4.2.14;vysvetlite, čo znamená, že proces tvorby softvéru je vedený prípadmi použitia.
 Unified Process;4.2.15;charakterizujte pojem „unified process“ – čo to je a na čo sa používa v softvérovom inžinierstve?
+disciplína UP;4.2.15;charakterizujte pojem „unified process“ – čo to je a na čo sa používa v softvérovom inžinierstve?
+fáza UP;4.2.15;charakterizujte pojem „unified process“ – čo to je a na čo sa používa v softvérovom inžinierstve?
+iterácia UP;4.2.15;charakterizujte pojem „unified process“ – čo to je a na čo sa používa v softvérovom inžinierstve?
 Unified Process;4.2.16;o aké princípy sa opiera unified process?
-Unified process;4.2.17;aké štyri fázy má unified process  ? 
-Unified process;4.2.18;aké hlavné skupiny činností (disciplín) definuje unified process?
-Unified process;4.2.19;aké podporné skupiny činností (disciplín) definuje unified process?
-Unified process;4.2.20;vysvetlite vzťah cyklu, iterácie, fáz (angl.  phase ) a skupín činností (angl.  discipline ) v rámci  unified process.
-Unified process;4.2.21;ktoré z hlavných činností (disciplín) sú v unified process spravidla dominantné pre fázu inicializácie (angl.  inception )?
-Unified process;4.2.22;ktoré z hlavných činností (pracovných tokov) sú v unified process spravidla dominantné pre fázu rozpracovania (angl.  elaboration )?
-Unified process;4.2.23;ktoré z hlavných činností (pracovných tokov) sú v unified process spravidla dominantné pre fázu vytvorenia softvéru (angl.  construction )?
-Unified process;4.2.24;ktoré z hlavných činností (pracovných tokov) sú v unified process spravidla dominantné pre fázu zavedenia (angl.  transition )?
-Unified process;4.2.25;najmenej koľko iterácií musí mať projekt podľa unified process?  
-Unified process;4.2.26;aký je rozdiel medzi uml a up (unified process)?
+fáza UP;4.2.17;aké štyri fázy má unified process  ? 
+Unified Process;4.2.17;aké štyri fázy má unified process  ? 
+disciplína UP;4.2.18;aké hlavné skupiny činností (disciplín) definuje unified process?
+Unified Process;4.2.18;aké hlavné skupiny činností (disciplín) definuje unified process?
+podporná disciplína UP;4.2.19;aké podporné skupiny činností (disciplín) definuje unified process?
+cyklus UP;4.2.20;vysvetlite vzťah cyklu, iterácie, fáz (angl.  phase ) a skupín činností (angl.  discipline ) v rámci  unified process.
+iterácia UP;4.2.20;vysvetlite vzťah cyklu, iterácie, fáz (angl.  phase ) a skupín činností (angl.  discipline ) v rámci  unified process.
+disciplína UP;4.2.20;vysvetlite vzťah cyklu, iterácie, fáz (angl.  phase ) a skupín činností (angl.  discipline ) v rámci  unified process.
+inicializácia (inception);4.2.21;ktoré z hlavných činností (disciplín) sú v unified process spravidla dominantné pre fázu inicializácie (angl.  inception )?
+rozpracovanie (elaboration);4.2.22;ktoré z hlavných činností (pracovných tokov) sú v unified process spravidla dominantné pre fázu rozpracovania (angl.  elaboration )?
+konštrukcia (construction);4.2.23;ktoré z hlavných činností (pracovných tokov) sú v unified process spravidla dominantné pre fázu vytvorenia softvéru (angl.  construction )?
+zavedenie (transition);4.2.24;ktoré z hlavných činností (pracovných tokov) sú v unified process spravidla dominantné pre fázu zavedenia (angl.  transition )?
+Unified Process;4.2.25;najmenej koľko iterácií musí mať projekt podľa unified process?  
+iterácia UP;4.2.25;najmenej koľko iterácií musí mať projekt podľa unified process?  
+Unified Process;4.2.26;aký je rozdiel medzi uml a up (unified process)?
 UML;4.2.26;aký je rozdiel medzi uml a up (unified process)?
 UML;4.3.1;Čo je to uml?
-UML;4.3.2;Čo je to diagram uml?
-diagram;4.3.2;Čo je to diagram uml?
-UML;4.3.3;aké diagramy uml poznáme? ako ich delíme? ktoré sú dôležité?
-diagram;4.3.3;aké diagramy uml poznáme? ako ich delíme? ktoré sú dôležité?
-UML;4.3.4;prečo je diagramov uml tak veľa?
-diagram;4.3.4;prečo je diagramov uml tak veľa?
+modelovací jazyk;4.3.1;Čo je to uml?
+modelovanie softvéru;4.3.1;Čo je to uml?
+diagram UML;4.3.2;Čo je to diagram uml?
+diagram UML;4.3.3;aké diagramy uml poznáme? ako ich delíme? ktoré sú dôležité?
+diagram UML;4.3.4;prečo je diagramov uml tak veľa?
 UML;4.3.5;na čo slúži uml ?
 UML;4.3.6;aká je základná „filozofia“ modelovania v uml (súvisí s~iteratívno-inkrementálnym prístupom)?
-UML;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
-UML;4.3.8;na čo slúži diagram aktivít?
+modelovanie softvéru;4.3.6;aká je základná „filozofia“ modelovania v uml (súvisí s~iteratívno-inkrementálnym prístupom)?
+vzťah UML;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
+asociácia;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
+generalizácia;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
+realizácia;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
+závislosť;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
+agregácia;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
+kompozícia;4.3.7;aké typy vzťahov   v uml poznáme, ako ich zakresľujeme a na čo slúžia?
 diagram aktivít;4.3.8;na čo slúži diagram aktivít?
-UML;4.3.9;opíšte notáciu diagramu aktivít uml.
 diagram aktivít;4.3.9;opíšte notáciu diagramu aktivít uml.
-UML;4.3.10;na čo slúži diagram prípadov použitia?
 diagram prípadov použitia;4.3.10;na čo slúži diagram prípadov použitia?
-UML;4.3.11;opíšte notáciu diagramu prípadov použitia uml.
 diagram prípadov použitia;4.3.11;opíšte notáciu diagramu prípadov použitia uml.
-UML;4.3.12;na čo slúži diagram tried?
 diagram tried;4.3.12;na čo slúži diagram tried?
-UML;4.3.13;opíšte notáciu diagramu tried uml.
 diagram tried;4.3.13;opíšte notáciu diagramu tried uml.
-UML;4.3.14;na čo slúži sekvenčný diagram?
 sekvenčný diagram;4.3.14;na čo slúži sekvenčný diagram?
-UML;4.3.15;opíšte notáciu sekvenčného diagramu uml.
 sekvenčný diagram;4.3.15;opíšte notáciu sekvenčného diagramu uml.
-UML;4.3.16;na čo slúži stavový diagram?
 stavový diagram;4.3.16;na čo slúži stavový diagram?
-UML;4.3.17;opíšte notáciu stavového diagramu uml.
 stavový diagram;4.3.17;opíšte notáciu stavového diagramu uml.
-UML;4.3.18;na čo slúži diagram objektov?
 diagram objektov;4.3.18;na čo slúži diagram objektov?
-UML;4.3.19;opíšte notáciu diagramu objektov uml.
 diagram objektov;4.3.19;opíšte notáciu diagramu objektov uml.
-UML;4.3.20;na čo slúži diagram komponentov?
 diagram komponentov;4.3.20;na čo slúži diagram komponentov?
-UML;4.3.21;opíšte notáciu diagramu komponentov uml.
 diagram komponentov;4.3.21;opíšte notáciu diagramu komponentov uml.
-UML;4.3.22;na čo slúži diagram balíkov?
 diagram balíkov;4.3.22;na čo slúži diagram balíkov?
-UML;4.3.23;opíšte notáciu diagramu balíkov uml.
 diagram balíkov;4.3.23;opíšte notáciu diagramu balíkov uml.
-UML;4.3.24;na čo slúži diagram rozmiestnenia?
 diagram rozmiestnenia;4.3.24;na čo slúži diagram rozmiestnenia?
-UML;4.3.25;opíšte notáciu diagramu rozmiestnenia uml.
 diagram rozmiestnenia;4.3.25;opíšte notáciu diagramu rozmiestnenia uml.

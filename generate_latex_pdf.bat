@@ -18,4 +18,5 @@ bibtex master14-blx.aux
 bibtex master15-blx.aux
 bibtex master16-blx.aux
 pdflatex master.tex
+xindy -M texindy -C utf8 -L czech master.idx
 pdflatex master.tex

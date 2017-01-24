@@ -811,7 +811,9 @@ class Latexer
 			file.puts 	'\pagenumbering{roman}'
 			file.puts  	'\input{titlepage.tex}'
 			#file.puts  	'\clearpage'			
+			file.puts  	'\cleardoublepage'
 			file.puts  	'\tableofcontents'
+			file.puts  	'\cleardoublepage'
 			file.puts  	'\listofquestion'
 			file.puts  	'\catcode239=9 %This is for escaping BOM characters' 
 			file.puts  	'\catcode187=9 %This is for escaping BOM characters' 
@@ -826,9 +828,10 @@ class Latexer
 	def build_structure_file(source_folder_root)
 		File.open($output_folder_latex+'/structure.tex',"w") do |file|
 			file.puts '\input{preface.tex}'
-			file.puts '\begin{figure}[p]'
-			file.puts '\includegraphics[width=1.35\textwidth,lap=-1cm,valign=T,center]{concept_maps_pages/intro.pdf}'
-			file.puts '\end{figure}'
+			#file.puts '\begin{figure}[p]'
+			#file.puts '\thispagestyle{empty}'			
+			#file.puts '\includegraphics[width=1.35\textwidth,lap=-1cm,valign=T,center]{concept_maps_pages/intro.pdf}'
+			#file.puts '\end{figure}'
 			onetimer = true;
 			Dir.glob($input_folder_original_book +'/*/') do |chapter_folder|
 				raw_chapter_name =  File.basename(chapter_folder)
@@ -836,7 +839,15 @@ class Latexer
 				chapter_number = raw_chapter_name.split(' ', 2)[0] #currently not needed
 				chapter_name = raw_chapter_name.split(' ', 2)[1]
 				if chapter_name == nil then next end
+				file.puts '\clearpage'
+				file.puts '\thispagestyle{empty}'
+				file.puts '\cleartoevenpage'
+				file.puts '\begin{figure}[p]'
+				file.puts '\thispagestyle{empty}'
+				file.puts '\includegraphics[width=1.1\textwidth,lap=-1cm,valign=T,center,trim=0 0 0 2cm]{concept_maps_pages/'+chapter_number+'_00.pdf}'
+				file.puts '\end{figure}'
 				file.puts '\chapter{'+chapter_name+'}'
+				file.puts  "\\markright{"+chapter_number.to_i.to_s+".0 V\\v{s}eobecn\\'{y} \\'{u}vod}"				
 				file.puts '\addtocontents{que}{\needspace{1cm}}'
 				file.puts '\addcontentsline{que}{part}{'+chapter_name+'}'
 				# insert page counter reset after first chapter declaration
@@ -850,13 +861,20 @@ class Latexer
 					subchapter_file = File.basename(file_path).split(' ', 2)[1]
 					if subchapter_file == nil then next end
 					subchapter_name = File.basename(subchapter_file,".docx" )
-					file.puts '\needspace{5cm}'
-					file.puts '\section{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
-					file.puts '\addtocontents{que}{\needspace{1cm}}' unless subchapter_name.include? '[Main]'
-					file.puts '\addcontentsline{que}{chapter}{'+subchapter_name+'}' unless subchapter_name.include? '[Main]'
-					file.puts '\begin{figure}[p]'
-					file.puts '\includegraphics[width=1.35\textwidth,lap=-1cm,valign=T,center]{concept_maps_pages/'+subchapter_number.gsub('.','_')+'.pdf}'
-					file.puts '\end{figure}'
+					if not subchapter_name.include? '[Main]' then
+						file.puts '\clearpage'
+						file.puts '\thispagestyle{empty}'
+						file.puts '\cleartoevenpage'
+						file.puts '\begin{figure}[p]'
+						file.puts '\thispagestyle{empty}'
+						file.puts '\includegraphics[width=1.1\textwidth,lap=-1cm,valign=T,center,trim=0 0 0 2cm]{concept_maps_pages/'+subchapter_number.gsub('.','_')+'.pdf}'
+						file.puts '\end{figure}'
+						file.puts '\cleardoublepage'
+						file.puts '\section{'+subchapter_name+'}'
+						file.puts '\thispagestyle{plain}'
+						file.puts '\addtocontents{que}{\needspace{1cm}}' 
+						file.puts '\addcontentsline{que}{chapter}{'+subchapter_name+'}'
+					end
 					file.puts '\input{'+subchapter_number+'.tex}'
 				end
 				# uncomment for bibliography per chapter
@@ -866,14 +884,19 @@ class Latexer
 			file.puts '\printbibliography[title=Zdroje]{}'
 			file.puts '\\addcontentsline{toc}{chapter}{Zdroje}'
 			file.puts '\appendix'
+			file.puts "\\renewcommand\\chaptername{Pr\\'{i}loha}"		
 			file.puts '\input{priloha_slovnik.tex}'
 			file.puts '\input{priloha_poster.tex}'
+			file.puts '\clearpage'
+			file.puts '\addcontentsline{toc}{chapter}{Register}'
+			file.puts '\printindex'
 		end
 	end
 	
 	
 	def copy_preamble_files
 		FileUtils.copy_entry($input_folder_original_book +'/preface.tex', $output_folder_latex + '/preface.tex')
+		#FileUtils.copy_entry($input_folder_original_book +'/register.tex', $output_folder_latex + '/register.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/hyphenation.tex', $output_folder_latex + '/hyphenation.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/all_bibliography_sources.bib', $output_folder_latex + '/all_bibliography_sources.bib')		
 		FileUtils.copy_entry($input_folder_original_book +'/priloha_poster.tex', $output_folder_latex + '/priloha_poster.tex')
@@ -895,6 +918,8 @@ class Latexer
 		end
 		res +="\n"
 		res += qalo[:question].map{|par| latexize_paragraph(par)}.join("\n")	# Odstavce otazky, including images
+		qalo[:concepts_second_level].each{|tag| res+='\index{'+tag+'}'}
+		qalo[:concepts]			   .each{|tag| res+='\index{'+tag+'}'}
 		res +='\end{question}'
 		res +="\n"
 		res +='\begin{answer}'
