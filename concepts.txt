@@ -124,7 +124,7 @@ vlastnosť softvéru;1.2.19;uveďte príklad dvojice vlastností softvéru, ktor
 správnosť;1.2.20;je správnosť softvérového produktu postačujúcou podmienkou kvalitného softvéru?
 použiteľnosť;1.2.21;uveďte príklad dvoch zmysluplných, no vzájomne rozporných požiadaviek na softvér z hľadiska použiteľnosti.
 vlastnosť softvéru;1.2.22;predstavte si, že ste začínajúca firma a ktorá sa rozhodla vyvinúť webový e-obchod na predaj svojich výrobkov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto e-obchodu: bezpečnosť, použiteľnosť, efektívnosť, znovupoužiteľnosť. ako by sa zmenilo poradie, ak by išlo o firmu b, ktorá chce predávať samotný softvér na e-obchodovanie (iným malým firmám, ktoré chcú predávať svoje výrobky)?
-vlastnosť softvéru;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo by sa poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
+vlastnosť softvéru;1.2.23;predstavte si, že vyvíjate hru pre mobilné zariadenia s modelom jednorazového poplatku za stiahnutie. aké poradie priorít (a prečo) by~ste~priradili nasledujúcim hľadiskám kvality pri vývoji tejto hry: udržovateľnosť, bezpečnosť, použiteľnosť, prenosnosť. zmenilo~by sa~poradie, ak by sa platobný model zmenil na mesačné poplatky? zmenilo~by sa poradie, ak by sme pred zakúpením hry (licencie) dali hráčom k dispozícii demo verziu hry?
 vlastnosť softvéru;1.2.24;predstavte si, že vyvíjate vnútrofiremnú aplikáciu na riadenie procesov výroby automobilov. aké poradie priorít (a~prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tohto softvéru: použiteľnosť, robustnosť, bezpečnosť voči okoliu, modifikovateľnosť.
 vlastnosť softvéru;1.2.25;predstavte si, že vytvárate softvérovú knižnicu na zobrazovanie grafov. aké poradie priorít (a prečo) by ste priradili nasledujúcim hľadiskám kvality pri vývoji tejto knižnice: spoľahlivosť, zdokumentovanosť, znovupoužiteľnosť, prenosnosť.
 vývoj softvéru;1.3.1;Čo je to softvérový proces? Čo presne znamená  vývoj softvéru ?
@@ -243,7 +243,7 @@ súdržnosť;2.2.6;Čo je to súdržnosť softvérovej súčiastky a o čo sa v 
 zviazanosť;2.2.7;Čo je to zviazanosť softvérových súčiastok a o čo sa v súvislosti s ňou snažíme pri dobrom návrhu?
 dekompozícia;2.2.8;prečo je v návrhu softvéru dôležitá dekompozícia?
 dekompozícia;2.2.9;ak je v súčte lacnejšie vytvorenie softvéru po menších súčiastkach (oproti vývoju monolitu), prečo nemôžeme donekonečna znižovať veľkosť súčiastok? 
-dekompozícia;2.2.10;aké   druhy dekompozície softvéru v návrhu poznáte? vysvetlite, čo znamenajú.
+Dekompozícia;2.2.10;aké   druhy dekompozície softvéru v návrhu poznáte? vysvetlite, čo znamenajú.
 funkcionálna dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
 udalostná dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
 dekompozícia;2.2.12;prečo pri tvorbe jedného softvéru spravidla potrebujeme uplatniť viaceré druhy dekompozície?
@@ -282,8 +282,8 @@ dokumentácia;2.3.2;Čo je výstupom etapy implementácie softvéru?
 test;2.3.2;Čo je výstupom etapy implementácie softvéru?
 programovací jazyk;2.3.3;prečo na vytvorenie softvérového systému potrebujeme spravidla viac softvérových (programovacích) jazykov?
 programovací jazyk;2.3.4;Čo by sme pri výbere programovacích jazykov pre projekt mali zvažovať?
-správa verzií zdrojového kódu;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version     control , ale aj  revision     control  ,   source     control )?
-nástroj na správu verzií;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version     control , ale aj  revision     control  ,   source     control )?
+správa verzií zdrojového kódu;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version control , ale aj  revision control  ,   source control )?
+nástroj na správu verzií;2.3.5;Čo sú to nástroje na správu verzií zdrojových kódov (angl.  version control , ale aj  revision control  ,   source control )?
 správa verzií zdrojového kódu;2.3.6;prečo uchovávame zdrojový kód v nástrojoch na správu verzií zdrojových kódov?
 nástroj na správu verzií;2.3.6;prečo uchovávame zdrojový kód v nástrojoch na správu verzií zdrojových kódov?
 správa verzií zdrojového kódu;2.3.7;aké dva druhy nástrojov na správu verzií zdrojových kódov poznáme z hľadiska umiestnenia úložiska  ?
@@ -319,8 +319,8 @@ trieda ekvivalencie;2.4.16;je pravdivé tvrdenie: „pri určovaní testovacích
 testovanie biela skrinka;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
 testovanie čierna skrinka;2.4.17;ktorá technika testovania je presnejšia: biela skrinka alebo čierna skrinka?
 testovanie sivá skrinka;2.4.18;ako funguje testovanie technikou sivej skrinky?
-testami riadený vývoj (TDD);2.4.19;vysvetlite pojem vývoj riadený testami (angl.  test   driven     development , tdd).
-testami riadený vývoj (TDD);2.4.20;pri vývoji riadenom testami (angl.  test   driven     development ) sa používa technika testovania biela alebo čierna skrinka? zdôvodnite.
+testami riadený vývoj (TDD);2.4.19;vysvetlite pojem vývoj riadený testami (angl.  test driven development , tdd).
+testami riadený vývoj (TDD);2.4.20;pri vývoji riadenom testami (angl.  test driven development ) sa používa technika testovania biela alebo čierna skrinka? zdôvodnite.
 akceptačné testovanie;2.4.21;Čo je to akceptačné testovanie?
 akceptačné testovanie;2.4.22;kto vykonáva akceptačné testovanie?
 zákazník;2.4.22;kto vykonáva akceptačné testovanie?
@@ -331,7 +331,7 @@ beta testovanie;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
 vývojár;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
 zákazník;2.4.25;Čo je to alfa-testovanie a čo je to beta-testovanie?
 testovanie použiteľnosti;2.4.26;aký typ testov sa používa pri testovaní použiteľnosti softvéru?
-jednotkové testovanie;2.4.27;Čo je to jednotkové testovanie (angl.  unit     testing )?
+jednotkové testovanie;2.4.27;Čo je to jednotkové testovanie (angl.  unit testing )?
 jednotkové testovanie;2.4.28;kto spravidla vykonáva jednotkové testovanie?
 vývojár;2.4.28;kto spravidla vykonáva jednotkové testovanie?
 integračné testovanie;2.4.29;Čo je to integračné testovanie?
@@ -384,11 +384,11 @@ iteratívny model;3.0.14;uveďte výhody a nevýhody iteratívneho modelu vývoj
 evolučný model;3.0.15;aká je základná charakteristika evolučného modelu vývoja softvéru?
 špirálový model;3.0.16;v čom hlavnom sa špirálový model životného cyklu softvéru líši od ostatných modelov (vodopádového, iteratívno-inkrementálneho či evolučného modelu)?
 špirálový model;3.0.17;porovnajte výhody a nevýhody špirálového modelu vývoja softvéru.
-agilný model;3.0.18;Čo je najväčší prínos agilného modelu vývoja oproti všeobecnému iteratívno-inkrementálnemu modelu?
-agilný model;3.0.19;porovnajte výhody a nevýhody agilného modelu vývoja softvéru.
-inkrementálny model;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
-iteratívny model;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
-agilný model;3.0.20;vysvetlite rozdiel medzi inkrementálnym, iteratívnym a~agilným modelom vývoja softvéru z pohľadu stavu fungujúceho softvéru.
+model agilného vývoja;3.0.18;Čo je najväčší prínos modelu agilného vývoja oproti všeobecnému iteratívno-inkrementálnemu modelu?
+model agilného vývoja;3.0.19;porovnajte výhody a nevýhody modelu agilného vývoja softvéru.
+inkrementálny model;3.0.20;vysvetlite rozdiel medzi inkrementálnym modelom, iteratívnym modelom a~modelom agilného vývoja softvéru z pohľadu stavu fungujúceho softvéru.
+iteratívny model;3.0.20;vysvetlite rozdiel medzi inkrementálnym modelom, iteratívnym modelom a~modelom agilného vývoja softvéru z pohľadu stavu fungujúceho softvéru.
+model agilného vývoja;3.0.20;vysvetlite rozdiel medzi inkrementálnym modelom, iteratívnym modelom a~modelom agilného vývoja softvéru z pohľadu stavu fungujúceho softvéru.
 iteratívno-inkrementálny model;3.0.21;akým modelom životného cyklu vývoja softvéru sa v súčasnosti v praxi vyvíja najviac? odpoveď stručne zdôvodnite.
 model;4.0.1;Čo je to model?  
 model softvéru;4.0.2;Čo je to model softvéru?

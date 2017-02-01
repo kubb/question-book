@@ -20,7 +20,7 @@ $image_config = {
 	'iterative-model-fig' => { :scale => '1.0', :flags => 'htb'},
 	'spiral-model-fig' => { :scale => '1.0', :flags => 'htb'},
 	'Agile-model-fig' => { :scale => '1.0', :flags => 'htb'},
-	'model-comparison-fig' => { :scale => '1.0', :flags => 'htb'},
+	'model-comparison-fig' => { :scale => '1.0', :flags => '!htb'},
 	'paradigmy' => { :scale => '1.0', :flags => 'htb'},
 	'prototypovanie' => { :scale => '1.0', :flags => 'htb'},
 	'obrazok-unified-process' => { :scale => '1.0', :flags => 'htb'},
@@ -29,13 +29,16 @@ $image_config = {
 	'obr-activity-example' => { :scale => '0.8', :flags => 'p'},
 	'obr-use-case-example' => { :scale => '1.0', :flags => 'p'},
 	'obr-class-example' => { :scale => '1.0', :flags => 'p'},
-	'obr-sequence-example' => { :scale => '0.7', :flags => 'thbp'},
+	'obr-sequence-example' => { :scale => '0.75', :flags => '!htb'},
 	'obr-state-diagram-example' => { :scale => '0.9', :flags => 'htb'},
 	'obr-object-diagram-example' => { :scale => '0.75', :flags => 'p'},
 	'obr-component-diagram-example' => { :scale => '0.9', :flags => 'p'},
-	'obr-package-diagram-example' => { :scale => '1.0', :flags => 'htb'},
+	'obr-package-diagram-example' => { :scale => '0.9', :flags => 'htb'},
 	'obr-deployment-diagram-example' => { :scale => '0.7', :flags => 'hbtp'} ,
 	
-	'agile-modeling' => { :scale => '1.0', :flags => 'htb'},
+	'agile-modeling' => { :scale => '1.0', :flags => 't'},
 }
 	#'model-comparison-fig' => { :scale => '1.0', :flags => 'htb', :clearpage_after => 1},
+	#'obr-deployment-diagram-example' => { :scale => '0.7', :flags => 'hbtp', :align_top => 1} ,
+	
+	#'agile-modeling' => { :scale => '1.0', :flags => 't',  :align_top => 1},

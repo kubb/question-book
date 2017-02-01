@@ -122,6 +122,12 @@ def replace_dashes_with_hyphens(text)
 		damaged = match[0]
 		repaired = damaged.gsub('\hyp ','-')
 		text.gsub!(damaged,repaired)
+	end
+	
+	text.scan(/cite{(.*?)}/).each do |match|
+		damaged = match[0]
+		repaired = damaged.gsub('\hyp ','-')
+		text.gsub!(damaged,repaired)
 	end	
 
 	text
@@ -351,10 +357,22 @@ class Extractor
 	def process_concepts(transition)
 		text = transition.args[0][:text]
 		#tags = text.split(',').map(&:strip)#.map(&:downcase) # povodne
-		tags_second_level = text.scan(/\[(.*?)\]/).join(", ").split(',').map(&:strip).reject(&:empty?)
-	        tags = text.gsub(/\[(.*?)\]/,',').split(',').map(&:strip).reject(&:empty?)
-		@QALO[:concepts] = tags
-		@QALO[:concepts_second_level] = tags_second_level
+		text.gsub!('((','<<')
+		text.gsub!('))','>>')
+		text.gsub!('([','{{')
+		text.gsub!('])','}}')
+		
+		tags_primary_invisible = text.scan(/<<(.*?)>>/).join(", ").split(',').map(&:strip).reject(&:empty?)
+		text.gsub!(/<<(.*?)>>/,',')
+		tags_secondary_invisible = text.scan(/{{(.*?)}}/).join(", ").split(',').map(&:strip).reject(&:empty?)
+		text.gsub!(/{{(.*?)}}/,',')
+		
+		tags_secondary = text.scan(/\[(.*?)\]/).join(", ").split(',').map(&:strip).reject(&:empty?)
+	        tags_primary = text.gsub(/\[(.*?)\]/,',').split(',').map(&:strip).reject(&:empty?)
+		@QALO[:concepts] 			 		= tags_primary
+		@QALO[:concepts_second_level] 		= tags_secondary
+		@QALO[:concepts_invisible] 			= tags_primary_invisible
+		@QALO[:concepts_second_level_invisible] 	= tags_secondary_invisible
 		$log.debug "Identified concepts"		
 	end
 
@@ -844,7 +862,7 @@ class Latexer
 				file.puts '\cleartoevenpage'
 				file.puts '\begin{figure}[p]'
 				file.puts '\thispagestyle{empty}'
-				file.puts '\includegraphics[width=1.1\textwidth,lap=-1cm,valign=T,center,trim=0 0 0 2cm]{concept_maps_pages/'+chapter_number+'_00.pdf}'
+				file.puts '\includegraphics[width=1.22\textwidth,lap=-1cm,valign=T,center,trim=1cm 0 0 0.7cm]{concept_maps_pages/'+chapter_number+'_00.pdf}'
 				file.puts '\end{figure}'
 				file.puts '\chapter{'+chapter_name+'}'
 				file.puts  "\\markright{"+chapter_number.to_i.to_s+".0 V\\v{s}eobecn\\'{y} \\'{u}vod}"				
@@ -867,7 +885,7 @@ class Latexer
 						file.puts '\cleartoevenpage'
 						file.puts '\begin{figure}[p]'
 						file.puts '\thispagestyle{empty}'
-						file.puts '\includegraphics[width=1.1\textwidth,lap=-1cm,valign=T,center,trim=0 0 0 2cm]{concept_maps_pages/'+subchapter_number.gsub('.','_')+'.pdf}'
+						file.puts '\includegraphics[width=1.22\textwidth,lap=-1cm,valign=T,center,trim=1cm 0 0 0.7cm]{concept_maps_pages/'+subchapter_number.gsub('.','_')+'.pdf}'
 						file.puts '\end{figure}'
 						file.puts '\cleardoublepage'
 						file.puts '\section{'+subchapter_name+'}'
@@ -884,12 +902,15 @@ class Latexer
 			file.puts '\printbibliography[title=Zdroje]{}'
 			file.puts '\\addcontentsline{toc}{chapter}{Zdroje}'
 			file.puts '\appendix'
-			file.puts "\\renewcommand\\chaptername{Pr\\'{i}loha}"		
+			file.puts "\\renewcommand\\appendixname{Pr\\'{i}loha}"		
 			file.puts '\input{priloha_slovnik.tex}'
 			file.puts '\input{priloha_poster.tex}'
 			file.puts '\clearpage'
 			file.puts '\addcontentsline{toc}{chapter}{Register}'
+			file.puts '\scriptsize'
 			file.puts '\printindex'
+			file.puts '\normalsize'
+			file.puts '\input{zaverecna_strana.tex}'
 		end
 	end
 	
@@ -902,6 +923,7 @@ class Latexer
 		FileUtils.copy_entry($input_folder_original_book +'/priloha_poster.tex', $output_folder_latex + '/priloha_poster.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/priloha_slovnik.tex', $output_folder_latex + '/priloha_slovnik.tex')
 		FileUtils.copy_entry($input_folder_original_book +'/titlepage.tex', $output_folder_latex + '/titlepage.tex')
+		FileUtils.copy_entry($input_folder_original_book +'/zaverecna_strana.tex', $output_folder_latex + '/zaverecna_strana.tex')
 	end
 	
 	
@@ -918,8 +940,10 @@ class Latexer
 		end
 		res +="\n"
 		res += qalo[:question].map{|par| latexize_paragraph(par)}.join("\n")	# Odstavce otazky, including images
-		qalo[:concepts_second_level].each{|tag| res+='\index{'+tag+'}'}
-		qalo[:concepts]			   .each{|tag| res+='\index{'+tag+'}'}
+		qalo[:concepts_second_level]		.each{|tag| res+='\index{'+tag+'}'}
+		qalo[:concepts]			  	 	.each{|tag| res+='\index{'+tag+'}'}
+		qalo[:concepts_second_level_invisible].each{|tag| res+='\index{'+tag+'}'}
+		qalo[:concepts_invisible]			.each{|tag| res+='\index{'+tag+'}'}
 		res +='\end{question}'
 		res +="\n"
 		res +='\begin{answer}'
@@ -1018,12 +1042,26 @@ class Latexer
 		res +="\n"
 		res += '\centering'
 		res +="\n"
-		res += '\includegraphics[width='+scale+'\columnwidth]{images/'+target_file_name+'}'
+		res += '\includegraphics[width='+scale+'\columnwidth '
+		if ($image_config[figure_par[:ID]][:align_top].equal? 1)
+			res +=',valign=T '
+		end
+		res +=']{images/'+target_file_name+'}'
 		res +="\n"
 		res += '\caption{'+remove_markup(figure_par[:caption])+'}' unless figure_par[:caption] == nil
 		res +="\n"
 		res += '\label{'+figure_par[:ID]+'}' unless figure_par[:ID] == nil
 		res +="\n"
+		
+		footnotes = res.scan(/\\footnote{(.*?)}/)
+		if not footnotes.empty? then
+			p 'footnote in figure caption: '+footnotes[0][0]
+			res.gsub!(/\\footnote{.*?}/,'*')
+			res +='\vspace{5pt}'
+			res +="\n"
+			res +='\scriptsize *'+footnotes[0][0]
+			res +="\n"
+		end
 		res += '\end{figure}'
 		res +="\n"
 		
