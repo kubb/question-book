@@ -707,6 +707,8 @@ class Docbook_builder
 				}
 			}
 		end
+		
+		# place correct cross references
 		qalo_as_xml = b.to_xml
 		qalo_as_xml.scan(/\*\*(.*?)\*\*/).each do |match|
 			label = match[0]
@@ -717,6 +719,9 @@ class Docbook_builder
 				qalo_as_xml.gsub!('**'+label+'**', replacement) 
 			end
 		end
+		qalo_as_xml.gsub!(/\\nocite\{(.*?)\}/,'')
+		
+		#write the XML resource
 		File.open(filename, 'w') {|f| f.write(qalo_as_xml) }
 	end
 	
