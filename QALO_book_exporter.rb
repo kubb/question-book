@@ -222,10 +222,11 @@ end
 # extractor.question_found (params)
 # extractor.answer_fourd (params)
 class Extractor
-	attr_accessor :qalos, :original_file_path
+	attr_accessor :qalos, :original_file_path, :subchapter_number_string
 	
 	def initialize
 		@qalos = []
+		@subchapter_number_string = "."
 		super()
 	end
 	
@@ -682,7 +683,8 @@ class Docbook_builder
 				'xmlns:alef' => 'http://fiit.stuba.sk/ns/alef', 
 				'version' => '5.0', 
 				'role' => 'question', 
-				'xml:id' => qalo[:id], 
+				'xml:id' => qalo[:id],
+				'structured_number' => qalo[:structured_number],
 				'difficulty' => '1',    #TODO Vieme aj inak
 				'bloom' => qalo[:bloom]){
 				
@@ -1146,10 +1148,12 @@ Dir.glob($input_folder_working_book +'/*/*.docx') { |docx_file|
 subchapter_extractors = []
 Dir.glob($input_folder_working_book  +'/**/*.document.xml') do |source_file|
 	next if source_file.include? "[ignore]"
-	$log.info ("Processing file" + source_file)
+	$log.info ("Processing file " + source_file)
 	paragraph_reader = Paragraph_reader.new source_file #TODO refactor, so it is not constructor
 	extractor_with_qalos = get_extractor_filled_with_qalos(paragraph_reader)
 	extractor_with_qalos.original_file_path = source_file
+	extractor_with_qalos.subchapter_number_string = File.basename(source_file)[0,2].to_i.to_s + '.' + File.basename(source_file)[3,2].to_i.to_s
+	
 	subchapter_extractors << extractor_with_qalos
 end
 
@@ -1159,12 +1163,15 @@ $labels_to_numbers = {} #for translating question labels to numbers
 @docbook_resource_number = 0
 subchapter_extractors.each do |extractor|
 	docbook_builder = Docbook_builder.new
+	qalo_number_within_chapter = 0
 	extractor.qalos.each do |qalo|
 		if qalo == nil then p extractor.qalos end
 		@docbook_resource_number += 1
+		qalo_number_within_chapter += 1
 		qalo[:docbook_number] = @docbook_resource_number #pomoooc, pouziva sa to aj v latexe
 		$labels_to_numbers[qalo[:label]] = qalo[:docbook_number] unless qalo[:label] == nil     # TODO sem musi ist strukturovane cislo, nejak
 		qalo[:id] = $docbook_resource_id_prefix + @docbook_resource_number.to_s
+		qalo[:structured_number] = extractor.subchapter_number_string + '.' +  qalo_number_within_chapter.to_s
 		target_file = $output_folder_docbook + '/' + $docbook_resource_file_prefix + @docbook_resource_number.to_s + ".xml" 
 		docbook_builder.build_ALEF_resource(target_file, qalo)
 	end
