@@ -707,7 +707,17 @@ class Docbook_builder
 				}
 			}
 		end
-		File.open(filename, 'w') {|f| f.write(b.to_xml) }
+		qalo_as_xml = b.to_xml
+		qalo_as_xml.scan(/\*\*(.*?)\*\*/).each do |match|
+			label = match[0]
+			if $labels_to_structured_numbers[label] == nil then
+				p "referencing non-existing question label " + label
+			else
+				replacement = "<ulink url='question-"+$labels_to_numbers[label].to_s+".xml'>"+$labels_to_structured_numbers[label]+'</ulink>'
+				qalo_as_xml.gsub!('**'+label+'**', replacement) 
+			end
+		end
+		File.open(filename, 'w') {|f| f.write(qalo_as_xml) }
 	end
 	
 	def append_regular (xml, par)
@@ -1159,19 +1169,35 @@ end
 
 
 # construct docbook
+
+
+# prepare for building XMLs (toto je tu na to, aby sa najskor spravilo mapovanie labelov, inak povodne to bolo v jednom prechode)
 $labels_to_numbers = {} #for translating question labels to numbers
+$labels_to_structured_numbers = {}
 @docbook_resource_number = 0
 subchapter_extractors.each do |extractor|
-	docbook_builder = Docbook_builder.new
 	qalo_number_within_chapter = 0
 	extractor.qalos.each do |qalo|
 		if qalo == nil then p extractor.qalos end
 		@docbook_resource_number += 1
 		qalo_number_within_chapter += 1
 		qalo[:docbook_number] = @docbook_resource_number #pomoooc, pouziva sa to aj v latexe
-		$labels_to_numbers[qalo[:label]] = qalo[:docbook_number] unless qalo[:label] == nil     # TODO sem musi ist strukturovane cislo, nejak
 		qalo[:id] = $docbook_resource_id_prefix + @docbook_resource_number.to_s
 		qalo[:structured_number] = extractor.subchapter_number_string + '.' +  qalo_number_within_chapter.to_s
+		$labels_to_numbers[qalo[:label]] = qalo[:docbook_number] unless qalo[:label] == nil
+		$labels_to_structured_numbers[qalo[:label]] = qalo[:structured_number]  unless qalo[:label] == nil
+	end
+end
+
+# build XMLs
+@docbook_resource_number = 0
+subchapter_extractors.each do |extractor|
+	docbook_builder = Docbook_builder.new
+	extractor.qalos.each do |qalo|
+		if qalo == nil then p extractor.qalos; next end
+		@docbook_resource_number += 1
+		
+		# build qalo
 		target_file = $output_folder_docbook + '/' + $docbook_resource_file_prefix + @docbook_resource_number.to_s + ".xml" 
 		docbook_builder.build_ALEF_resource(target_file, qalo)
 	end
@@ -1194,7 +1220,7 @@ subchapter_extractors.each do |extractor|
 		extractor.qalos.each_with_index do |qalo, index|
 			chapter_wise_number = chapter_number_prefix + (index+1).to_s
 			qalo[:chapter_wise_number] = chapter_wise_number
-			$labels_to_structured_numbers[qalo[:label]] = chapter_wise_number;
+			$labels_to_structured_numbers[qalo[:label]] = chapter_wise_number
 			resource = latexer.build_latex_resource(qalo)
 			f.write(resource.encode('UTF-8'))
 			#TODO sem este bachnut logovanie koncept-id-znenie otazky
