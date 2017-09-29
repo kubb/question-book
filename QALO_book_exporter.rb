@@ -686,7 +686,7 @@ class Docbook_builder
 				'difficulty' => '1',    #TODO Vieme aj inak
 				'bloom' => qalo[:bloom]){
 				
-				xml.title qalo[:concepts].first
+				#xml.title qalo[:concepts].first     # title tag uz nema zmysel
 				xml.metadata {
 					qalo[:concepts].each{ |tag| xml.tag('relevancy'=>'1.0'){xml.text tag}}
 					qalo[:concepts_invisible].each{ |tag| xml.tag('relevancy'=>'1.0'){xml.text tag}}
