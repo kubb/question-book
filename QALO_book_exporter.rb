@@ -677,17 +677,21 @@ class Docbook_builder
 		@figure_id = 0
 		@actual_qalo = qalo
 		b = Nokogiri::XML::Builder.new(:encoding => 'utf-8') do |xml|
-			xml.article('xmlns' => 'http://docbook.org/ns/docbook', 
-			'xmlns:html' => 'http://www.w3.org/1999/xhtml', 
-			'xmlns:alef' => 'http://fiit.stuba.sk/ns/alef', 
-			'version' => '5.0', 
-			'role' => 'question', 
-			'xml:id' => qalo[:id], 
-			'difficulty' => '1',    #TODO Vieme aj inak
-			'bloom' => qalo[:bloom]){
+				xml.article('xmlns' => 'http://docbook.org/ns/docbook', 
+				'xmlns:html' => 'http://www.w3.org/1999/xhtml', 
+				'xmlns:alef' => 'http://fiit.stuba.sk/ns/alef', 
+				'version' => '5.0', 
+				'role' => 'question', 
+				'xml:id' => qalo[:id], 
+				'difficulty' => '1',    #TODO Vieme aj inak
+				'bloom' => qalo[:bloom]){
+				
 				xml.title qalo[:concepts].first
 				xml.metadata {
-					qalo[:concepts].each { |tag| xml.tag tag}
+					qalo[:concepts].each{ |tag| xml.tag('relevancy'=>'1.0'){xml.text tag}}
+					qalo[:concepts_invisible].each{ |tag| xml.tag('relevancy'=>'1.0'){xml.text tag}}
+					qalo[:concepts_second_level].each { |tag| xml.tag('relevancy'=>'0.5'){xml.text tag}}
+					qalo[:concepts_second_level_invisible].each{ |tag| xml.tag('relevancy'=>'0.5'){xml.text tag}}
 				}
 				xml.simpleselect ({'role' => 'definition'}) {
 					qalo[:question].each do |par|
