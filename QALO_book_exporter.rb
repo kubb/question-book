@@ -747,7 +747,7 @@ class Docbook_builder
 					xml.imagedata ({'format' => format[1..-1], 'fileref' => File.join($docbook_resource_folder_relative, figure_target_filename) })
 				}
 				xml.caption {
-					xml.para par[:caption]
+					xml.para { xml << par[:caption]}
 				}
 			}
 		}
