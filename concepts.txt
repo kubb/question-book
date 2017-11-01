@@ -243,7 +243,7 @@ súdržnosť;2.2.6;Čo je to súdržnosť softvérovej súčiastky a o čo sa v 
 zviazanosť;2.2.7;Čo je to zviazanosť softvérových súčiastok a o čo sa v súvislosti s ňou snažíme pri dobrom návrhu?
 dekompozícia;2.2.8;prečo je v návrhu softvéru dôležitá dekompozícia?
 dekompozícia;2.2.9;ak je v súčte lacnejšie vytvorenie softvéru po menších súčiastkach (oproti vývoju monolitu), prečo nemôžeme donekonečna znižovať veľkosť súčiastok? 
-Dekompozícia;2.2.10;aké   druhy dekompozície softvéru v návrhu poznáte? vysvetlite, čo znamenajú.
+dekompozícia;2.2.10;aké   druhy dekompozície softvéru v návrhu poznáte? vysvetlite, čo znamenajú.
 funkcionálna dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
 udalostná dekompozícia;2.2.11;aký   je rozdiel medzi funkcionálnou a udalostnou dekompozíciou softvéru pri návrhu?
 dekompozícia;2.2.12;prečo pri tvorbe jedného softvéru spravidla potrebujeme uplatniť viaceré druhy dekompozície?

@@ -719,7 +719,8 @@ class Docbook_builder
 				qalo_as_xml.gsub!('**'+label+'**', replacement) 
 			end
 		end
-		qalo_as_xml.gsub!(/\\nocite\{(.*?)\}/,'')
+		#qalo_as_xml.gsub!(/\\nocite\{(.*?)\}/,'')
+		#qalo_as_xml.gsub!(/\\cite\{(.*?)\}/,'')
 		qalo_as_xml.gsub!('~',' ')
 		
 		#write the XML resource
