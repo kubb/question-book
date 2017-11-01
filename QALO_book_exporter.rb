@@ -720,6 +720,7 @@ class Docbook_builder
 			end
 		end
 		qalo_as_xml.gsub!(/\\nocite\{(.*?)\}/,'')
+		qalo_as_xml.gsub!('~',' ')
 		
 		#write the XML resource
 		File.open(filename, 'w') {|f| f.write(qalo_as_xml) }
